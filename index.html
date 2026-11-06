@@ -1,0 +1,2373 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>一葉 Yi Ye Estate — Single-Origin Tea from Wuyi Mountains</title>
+<meta name="description" content="Yi Ye Estate — single-origin teas sourced directly from Wuyi Mountains, Fujian. B2B wholesale: rock oolong, white tea, pu-erh. Request a catalogue or sample set.">
+
+<!-- Open Graph -->
+<meta property="og:type"        content="website">
+<meta property="og:url"         content="https://yiye-estate.com/">
+<meta property="og:title"       content="一葉 Yi Ye Estate — Single-Origin Tea from Wuyi Mountains">
+<meta property="og:description" content="Single-origin teas sourced directly from Wuyi Mountains, Fujian. B2B wholesale: rock oolong, white tea, pu-erh. Request a catalogue or sample set.">
+<meta property="og:image"       content="https://yiye-estate.com/og-image.jpg"><!-- TODO: upload 1200×630px preview image -->
+
+<!-- Twitter / X card -->
+<meta name="twitter:card"        content="summary_large_image">
+<meta name="twitter:title"       content="一葉 Yi Ye Estate — Single-Origin Tea from Wuyi Mountains">
+<meta name="twitter:description" content="Single-origin teas sourced directly from Wuyi Mountains, Fujian. B2B wholesale: rock oolong, white tea, pu-erh.">
+<meta name="twitter:image"       content="https://yiye-estate.com/og-image.jpg"><!-- TODO: same image as og:image -->
+
+<!-- Favicon -->
+<link rel="icon" href="/favicon.ico"><!-- TODO: replace with actual favicon file -->
+<link rel="apple-touch-icon" href="/apple-touch-icon.png"><!-- TODO: replace with actual 180×180px icon -->
+
+<!-- Analytics placeholders -->
+<!-- GA4: вставити тег тут -->
+<!-- Meta Pixel: вставити тут -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@200;300;400&family=Inter:wght@200;300;400;500&display=swap&display=swap" rel="stylesheet">
+<style>
+:root {
+  --black:  #0C0D0A;
+  --black2: #131410;
+  --black3: #1A1C17;
+  --offwhite: #F0EFE8;
+  --dim:    rgba(240,239,232,.70);
+  --dimmer: rgba(240,239,232,.50);
+  --line:   rgba(240,239,232,.12);
+  --green:  #1E3D1F;
+  --moss:   #3A5C3B;
+  --accent: #6B8F4E;
+
+  --zh: 'Noto Serif SC', serif;
+  --en: 'Inter', system-ui, sans-serif;
+
+  --side: clamp(24px, 6vw, 88px);
+  --gap:  clamp(80px, 11vw, 140px);
+  --max:  1280px;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; color-scheme: dark; }
+
+body {
+  font-family: var(--en);
+  background: var(--black);
+  color: var(--offwhite);
+  font-size: 15px;
+  line-height: 1.65;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+}
+
+img { display: block; width: 100%; }
+
+/* ── NAV ── */
+nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 200;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 22px var(--side);
+  border-bottom: 1px solid var(--line);
+  transition: border-color .3s, background .3s;
+}
+nav.on {
+  background: color-mix(in srgb, var(--black) 90%, transparent);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+.n-logo {
+  display: flex; align-items: center; gap: 14px;
+  text-decoration: none; color: var(--offwhite);
+}
+.n-zh {
+  font-family: var(--zh); font-size: 22px; font-weight: 300;
+  letter-spacing: .06em; line-height: 1;
+}
+.n-sep { width: 1px; height: 22px; background: var(--line); }
+.n-en { font-size: 11px; font-weight: 300; letter-spacing: .18em; color: var(--dim); }
+.n-links { display: flex; gap: 36px; list-style: none; white-space: nowrap; }
+.n-links a {
+  font-size: 12px; font-weight: 300; letter-spacing: .12em;
+  color: var(--dim); text-decoration: none; transition: color .2s;
+}
+.n-links a:hover { color: var(--offwhite); }
+.n-cta {
+  padding: 9px 22px; border: 1px solid var(--line);
+  color: var(--offwhite); font-family: var(--en); font-size: 11px;
+  font-weight: 300; letter-spacing: .14em; text-decoration: none;
+  transition: border-color .2s, color .2s;
+}
+.n-cta:hover { border-color: var(--offwhite); }
+@media (max-width: 768px) { .n-links { display: none; } }
+
+/* ── HERO ── */
+.hero {
+  position: relative; height: 100svh; min-height: 600px;
+  display: flex; flex-direction: column;
+  overflow: hidden;
+}
+.hero-bg {
+  position: absolute; inset: 0; z-index: 0;
+  background: var(--black);
+}
+.hero-bg video {
+  width: 100%; height: 100%; object-fit: cover;
+  opacity: 1; filter: saturate(1.05) brightness(.95);
+}
+.hero-bg::after {
+  content: '';
+  position: absolute; inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(12,13,10,.72) 0%,
+    rgba(12,13,10,.30) 18%,
+    rgba(12,13,10,.0)  32%,
+    rgba(12,13,10,.0)  65%,
+    rgba(12,13,10,.30) 82%,
+    rgba(12,13,10,.78) 100%
+  );
+}
+
+/* top metadata strip — mirrors the reference's header bar */
+.hero-meta {
+  position: relative; z-index: 2;
+  display: grid; grid-template-columns: 1fr 1fr 1fr;
+  gap: 0;
+  padding: 88px var(--side) 0;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 14px;
+}
+.hero-meta-col { display: flex; flex-direction: column; gap: 3px; }
+.hero-meta-col + .hero-meta-col { border-left: 1px solid var(--line); padding-left: 20px; }
+.hm-title { font-size: 10px; font-weight: 300; letter-spacing: .2em; color: var(--dimmer); }
+.hm-text  { font-size: 10px; font-weight: 300; color: var(--dimmer); line-height: 1.65; max-width: 220px; }
+
+/* center block — estate name + english subtitle */
+.hero-center {
+  position: absolute; z-index: 2;
+  top: 50%; left: 0; right: 0;
+  transform: translateY(-50%);
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  gap: 10px; text-align: center;
+  padding: 0 var(--side);
+}
+.hero-center-en {
+  font-size: clamp(11px, 1.3vw, 15px); font-weight: 200;
+  letter-spacing: .32em; color: rgba(240,239,232,.82);
+}
+
+/* bottom bar — big ZH left + big ZH right + buttons center */
+.hero-bottom {
+  position: absolute; z-index: 2;
+  bottom: 0; left: 0; right: 0;
+  display: grid; grid-template-columns: 1fr auto 1fr;
+  align-items: flex-end;
+  padding: 0 var(--side) clamp(32px, 6vh, 60px);
+  gap: 20px;
+}
+.hero-bottom-left {}
+.hero-big-zh {
+  font-family: var(--zh);
+  font-size: clamp(56px, 9vw, 128px);
+  font-weight: 200; line-height: .88;
+  color: var(--offwhite); letter-spacing: .02em;
+  display: block;
+}
+.hero-big-sub {
+  font-size: 11px; font-weight: 300; letter-spacing: .18em;
+  color: rgba(240,239,232,.38); margin-top: 10px; display: block;
+}
+.hero-bottom-center {
+  display: flex; flex-direction: column;
+  align-items: center; gap: 12px;
+  padding-bottom: 6px;
+}
+.hero-bottom-desc {
+  font-size: 12px; font-weight: 300; color: rgba(240,239,232,.38);
+  letter-spacing: .1em; text-align: center; max-width: 180px; line-height: 1.7;
+}
+.hero-btns { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; }
+.hero-bottom-right { text-align: right; }
+
+.btn-o {
+  padding: 11px 24px; border: 1px solid var(--offwhite);
+  color: var(--offwhite); font-family: var(--en); font-size: 10px;
+  font-weight: 300; letter-spacing: .18em; text-decoration: none;
+  transition: background .2s, color .2s;
+  display: inline-block;
+}
+.btn-o:hover { background: var(--offwhite); color: var(--black); }
+.btn-ghost {
+  padding: 11px 24px; border: 1px solid rgba(240,239,232,.2);
+  color: rgba(240,239,232,.45); font-family: var(--en); font-size: 10px;
+  font-weight: 300; letter-spacing: .18em; text-decoration: none;
+  transition: border-color .2s, color .2s;
+  display: inline-block;
+}
+.btn-ghost:hover { border-color: var(--offwhite); color: var(--offwhite); }
+
+@media (max-width: 860px) {
+  .hero-meta { grid-template-columns: 1fr 1fr; }
+  .hero-meta-col:last-child { display: none; }
+  .hero-bottom { grid-template-columns: 1fr 1fr; }
+  .hero-bottom-center { display: none; }
+  .hero-bottom-right { align-self: end; }
+}
+@media (max-width: 540px) {
+  .hero-meta { grid-template-columns: 1fr; }
+  .hero-meta-col + .hero-meta-col { display: none; }
+  .hero-big-zh { font-size: 56px; }
+}
+
+/* ── TICKER ── */
+.ticker {
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  overflow: hidden; white-space: nowrap;
+  padding: 14px 0; background: var(--black2);
+}
+.ticker-track {
+  display: inline-flex; gap: 0;
+  animation: tick 32s linear infinite;
+}
+.ticker-item {
+  font-size: 11px; font-weight: 300; letter-spacing: .18em;
+  color: var(--dimmer); padding: 0 40px;
+  display: flex; align-items: center; gap: 20px;
+}
+.ticker-item .t-sep { font-family: var(--zh); font-size: 16px; color: var(--accent); }
+@keyframes tick { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+/* ── SECTION BASE ── */
+.sec { padding: var(--gap) var(--side); }
+.sec-inner { max-width: var(--max); margin: 0 auto; }
+.sec-eyebrow {
+  font-size: 11px; font-weight: 300; letter-spacing: .2em;
+  color: var(--dim); margin-bottom: 14px; display: block;
+}
+.sec-title-zh {
+  font-family: var(--zh); font-size: clamp(36px, 5vw, 64px);
+  font-weight: 200; line-height: 1.05; color: var(--offwhite);
+  margin-bottom: 10px; letter-spacing: .05em;
+}
+.sec-title-en {
+  font-size: clamp(11px, 1.2vw, 14px); font-weight: 200;
+  letter-spacing: .2em; color: var(--dim); margin-bottom: 28px;
+}
+.sec-lead {
+  font-size: 14px; font-weight: 300; color: var(--dim);
+  max-width: 520px; line-height: 1.82;
+}
+
+/* ── TEAS ── */
+.teas-sec { background: var(--black2); }
+.teas-head {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 60px; align-items: center; margin-bottom: 60px;
+}
+.teas-note {
+  font-size: 12px; font-weight: 300; color: var(--dimmer);
+  line-height: 1.8; border-left: 1px solid var(--line); padding-left: 20px;
+  align-self: center;
+}
+.teas-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  gap: 1px; background: var(--line);
+  border: 1px solid var(--line);
+}
+.tea-card {
+  background: var(--black2); position: relative; overflow: hidden;
+  display: flex; flex-direction: column;
+}
+.tea-img {
+  position: relative; height: 260px; overflow: hidden;
+  flex-shrink: 0;
+}
+.tea-img img {
+  width: 100%; height: 100%; object-fit: cover;
+  filter: saturate(1.1) brightness(.75);
+  transition: transform .6s ease, filter .6s ease;
+}
+.tea-card:hover .tea-img img { transform: scale(1.04); filter: saturate(1.3) brightness(.8); }
+.tea-img-overlay {
+  position: absolute; inset: 0;
+  background: linear-gradient(to bottom, transparent 50%, rgba(12,13,10,.85) 100%);
+}
+.tea-glyph {
+  position: absolute; bottom: 12px; right: 16px;
+  font-family: var(--zh); font-size: 48px; font-weight: 200;
+  color: rgba(240,239,232,.18); line-height: 1;
+  pointer-events: none; user-select: none;
+}
+.tea-body { padding: 24px 28px 32px; display: flex; flex-direction: column; gap: 12px; flex: 1; }
+.tea-type {
+  font-size: 10px; font-weight: 300; letter-spacing: .2em;
+  color: var(--accent); border: 1px solid color-mix(in srgb, var(--accent) 40%, transparent);
+  padding: 4px 10px; align-self: flex-start;
+}
+.tea-name-zh {
+  font-family: var(--zh); font-size: 26px; font-weight: 300;
+  color: var(--offwhite); line-height: 1.1; letter-spacing: .04em;
+}
+.tea-name-en {
+  font-size: 11px; font-weight: 300; letter-spacing: .14em;
+  color: var(--dim); margin-top: -4px;
+}
+.tea-flavor {
+  font-size: 12px; font-weight: 300; color: var(--dimmer);
+  line-height: 1.72;
+}
+.tea-specs {
+  display: flex; gap: 0; margin-top: auto; padding-top: 18px;
+  border-top: 1px solid var(--line);
+}
+.tea-spec { flex: 1; }
+.tea-spec + .tea-spec { border-left: 1px solid var(--line); padding-left: 14px; }
+.ts-label { font-size: 10px; font-weight: 300; letter-spacing: .2em; color: var(--dimmer); margin-bottom: 3px; }
+.ts-val { font-size: 13px; font-weight: 300; color: var(--dim); }
+.tea-link {
+  margin-top: 20px; padding: 13px 16px;
+  border: 1px solid rgba(240,239,232,.28);
+  display: flex; align-items: center; justify-content: space-between;
+  font-size: 11px; font-weight: 300; letter-spacing: .16em;
+  color: var(--dim); text-decoration: none;
+  transition: border-color .2s, color .2s, background .2s;
+  background: none; width: 100%; cursor: pointer; font-family: var(--en);
+}
+.tea-link:hover { color: var(--offwhite); border-color: rgba(240,239,232,.7); background: rgba(240,239,232,.04); }
+.tea-link-arrow { font-size: 14px; }
+
+/* ── TEA MODAL ── */
+.tea-modal-overlay {
+  display: none;
+  position: fixed; inset: 0; z-index: 900;
+  background: rgba(12,13,10,.82);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  align-items: center; justify-content: center;
+  padding: clamp(16px, 4vw, 48px);
+}
+.tea-modal-overlay.open { display: flex; }
+.tea-modal {
+  position: relative;
+  display: grid; grid-template-columns: 1fr 1fr;
+  width: 100%; max-width: 960px;
+  height: min(88vh, 680px);
+  background: var(--black2);
+  border: 1px solid var(--line);
+  overflow: hidden;
+}
+.tea-modal-img {
+  position: relative; overflow: hidden;
+}
+.tea-modal-img img {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover; display: block;
+  filter: saturate(1.1) brightness(.88);
+}
+.tea-modal-img-label {
+  position: absolute; bottom: 24px; left: 24px;
+  font-family: var(--zh); font-size: clamp(48px, 6vw, 80px);
+  font-weight: 200; color: rgba(240,239,232,.18); line-height: 1;
+  pointer-events: none; user-select: none;
+}
+.tea-modal-body {
+  padding: clamp(28px, 4vw, 48px);
+  overflow-y: auto;
+  display: flex; flex-direction: column; gap: 20px;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(240,239,232,.18) transparent;
+}
+.tea-modal-body::-webkit-scrollbar {
+  width: 3px;
+}
+.tea-modal-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+.tea-modal-body::-webkit-scrollbar-thumb {
+  background: rgba(240,239,232,.18);
+  border-radius: 0;
+}
+.tea-modal-body::-webkit-scrollbar-thumb:hover {
+  background: rgba(240,239,232,.38);
+}
+.tea-modal-type {
+  font-size: 10px; font-weight: 300; letter-spacing: .2em;
+  color: var(--accent); border: 1px solid color-mix(in srgb, var(--accent) 40%, transparent);
+  padding: 4px 10px; align-self: flex-start;
+}
+.tea-modal-zh {
+  font-family: var(--zh); font-size: clamp(32px, 4vw, 48px);
+  font-weight: 200; color: var(--offwhite); line-height: 1.1; margin: 0;
+}
+.tea-modal-en {
+  font-size: 12px; font-weight: 300; letter-spacing: .08em;
+  color: var(--accent); margin-top: -12px;
+}
+.tea-modal-desc {
+  font-size: 13px; font-weight: 300; color: var(--dim);
+  line-height: 1.8; border-top: 1px solid var(--line); padding-top: 20px;
+}
+.tea-modal-section-title {
+  font-size: 10px; font-weight: 300; letter-spacing: .2em;
+  color: var(--dimmer); text-transform: uppercase; margin-bottom: 10px;
+}
+.tea-modal-packs {
+  display: flex; flex-wrap: wrap; gap: 8px;
+}
+.tea-modal-pack {
+  padding: 6px 14px; border: 1px solid var(--line);
+  font-size: 11px; font-weight: 300; letter-spacing: .1em; color: var(--dim);
+}
+.tea-modal-specs {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 14px;
+  border-top: 1px solid var(--line); padding-top: 20px;
+}
+.tea-modal-spec-item {}
+.tea-modal-spec-label {
+  font-size: 10px; font-weight: 300; letter-spacing: .2em;
+  color: var(--dimmer); margin-bottom: 4px;
+}
+.tea-modal-spec-val {
+  font-size: 12px; font-weight: 300; color: var(--offwhite); letter-spacing: .04em;
+}
+.tea-modal-cta {
+  margin-top: auto; padding-top: 20px; border-top: 1px solid var(--line);
+  display: flex; gap: 12px; flex-wrap: wrap;
+}
+.tea-modal-btn-primary {
+  padding: 11px 24px; background: transparent;
+  border: 1px solid var(--offwhite);
+  color: var(--offwhite); font-family: var(--en); font-size: 10px;
+  font-weight: 300; letter-spacing: .18em; text-decoration: none;
+  transition: background .2s, color .2s;
+}
+.tea-modal-btn-primary:hover { background: var(--offwhite); color: var(--black); }
+.tea-modal-close {
+  position: absolute; top: 16px; right: 20px; z-index: 10;
+  background: var(--black2); border: 1px solid var(--line); cursor: pointer;
+  color: var(--dim); font-size: 22px; line-height: 1;
+  transition: color .2s, border-color .2s; padding: 4px 8px;
+  width: 36px; height: 36px;
+  display: flex; align-items: center; justify-content: center;
+}
+.tea-modal-close:hover { color: var(--offwhite); border-color: var(--dimmer); }
+@media (max-width: 700px) {
+  .tea-modal { grid-template-columns: 1fr; }
+  .tea-modal-img { min-height: 220px; }
+}
+
+@media (max-width: 1000px) { .teas-grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 600px)  { .teas-grid { grid-template-columns: 1fr; } .teas-head { grid-template-columns: 1fr; } }
+
+/* ── WHY ── */
+.why-sec { background: var(--black); position: relative; overflow: hidden; }
+.why-bg-glyph {
+  position: absolute; right: -60px; top: 50%; transform: translateY(-50%);
+  font-family: var(--zh); font-size: clamp(240px, 30vw, 480px);
+  font-weight: 200; color: rgba(240,239,232,.025);
+  line-height: 1; pointer-events: none; user-select: none;
+}
+.why-layout {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 80px; align-items: stretch;
+}
+.why-layout > div { display: flex; flex-direction: column; }
+.why-items { margin-top: 48px; display: flex; flex-direction: column; gap: 0; }
+.why-item {
+  display: grid; grid-template-columns: 48px 1fr;
+  align-items: start; gap: 20px;
+  padding: 28px 0; border-bottom: 1px solid var(--line);
+}
+.why-item:last-child { border-bottom: none; }
+.wi-icon {
+  width: 44px; height: 44px; border: 1px solid var(--line);
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--zh); font-size: 20px; font-weight: 300;
+  color: var(--dim); flex-shrink: 0;
+}
+.wi-title { font-size: 14px; font-weight: 300; color: var(--offwhite); margin-bottom: 6px; letter-spacing: .04em; }
+.wi-text  { font-size: 12px; font-weight: 300; color: var(--dimmer); line-height: 1.82; }
+.why-photo {
+  position: relative; overflow: hidden; flex: 1; min-height: 0;
+}
+.why-photo img {
+  width: 100%; height: 100%; object-fit: cover;
+  filter: saturate(1.1) brightness(.7);
+}
+.why-photo::before {
+  content: '';
+  position: absolute; inset: 0; z-index: 1;
+  border: 1px solid var(--line);
+  pointer-events: none;
+}
+.why-photo-label {
+  position: absolute; bottom: 0; left: 0; right: 0; z-index: 2;
+  padding: 18px 20px;
+  background: linear-gradient(transparent, rgba(12,13,10,.72));
+  font-family: var(--en); font-size: 11px; font-weight: 300; letter-spacing: .14em; color: rgba(240,239,232,.70);
+  display: flex; justify-content: space-between; align-items: flex-end;
+}
+.why-photo-label span { font-family: var(--en); font-size: 13px; font-weight: 300; color: rgba(240,239,232,.40); line-height: 1; letter-spacing: .02em; }
+
+@media (max-width: 860px) { .why-layout { grid-template-columns: 1fr; } .why-photo { height: 320px; } }
+
+/* ── ABOUT ── */
+/* pin-wrap is 400vh tall — inner is sticky so content stays on screen while dots animate */
+.about-sec { background: var(--black); position: relative; }
+.about-bg-glyph { position: absolute; left: -80px; top: 10%; font-family: var(--zh); font-size: clamp(280px, 36vw, 520px); font-weight: 200; color: rgba(240,239,232,.022); line-height: 1; pointer-events: none; user-select: none; }
+.about-pin-wrap { position: relative; }
+.about-pin-inner {
+  display: flex; align-items: stretch;
+}
+/* Layout fills viewport height with proper padding, content centred inside */
+.about-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 1fr;
+  gap: 0 60px;
+  align-items: center;
+  width: 100%; max-width: var(--max);
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: var(--gap) var(--side);
+  box-sizing: border-box;
+}
+/* LEFT: eyebrow + big title + timeline, no description here */
+.about-left { display: contents; }
+.about-header { grid-column: 1; grid-row: 1; align-self: center; }
+.about-timeline-wrap { grid-column: 1; grid-row: 2; align-self: start; }
+.about-timeline { margin-top: 24px; display: flex; flex-direction: column; gap: 0; position: relative; }
+.about-timeline::before { content: ''; position: absolute; left: 7px; top: 8px; bottom: 8px; width: 1px; background: var(--line); }
+.tl-item { display: grid; grid-template-columns: 20px 1fr; gap: 20px; padding: 0 0 32px; }
+.tl-item:last-child { padding-bottom: 0; }
+.tl-dot { width: 15px; height: 15px; border: 1px solid var(--line); background: var(--black); position: relative; z-index: 1; margin-top: 3px; flex-shrink: 0; transition: background .4s ease, border-color .4s ease; }
+.tl-dot.active { background: var(--accent); border-color: var(--accent); }
+.tl-year { font-size: 11px; font-weight: 300; letter-spacing: .16em; color: var(--accent); margin-bottom: 5px; }
+.tl-title { font-size: 13px; font-weight: 300; color: var(--offwhite); margin-bottom: 4px; }
+.tl-text { font-size: 11px; font-weight: 300; color: var(--dimmer); line-height: 1.82; }
+/* RIGHT: description aligns with zh title (row1), photo+facts align with timeline (row2) */
+.about-right-top { grid-column: 2; grid-row: 1; display: flex; flex-direction: column; justify-content: center; padding-bottom: 0; align-self: center; }
+.about-right-bottom { grid-column: 2; grid-row: 2; display: flex; flex-direction: column; gap: 0; align-self: start; }
+.about-desc { font-size: 13px; font-weight: 300; color: var(--dimmer); line-height: 1.82; margin-bottom: 0; }
+.about-photo { position: relative; flex: 1; min-height: 180px; max-height: clamp(180px, 22vw, 300px); overflow: hidden; margin-bottom: 1px; }
+.about-photo img { width: 100%; height: 100%; object-fit: cover; filter: saturate(1.05) brightness(.68); transition: transform .6s ease; }
+.about-photo:hover img { transform: scale(1.03); }
+.about-photo::after { content: ''; position: absolute; inset: 0; border: 1px solid var(--line); pointer-events: none; }
+.about-facts { display: grid; grid-template-columns: 1fr 1fr; gap: 0; border: 1px solid var(--line); }
+.ab-fact { padding: 14px 18px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.ab-fact:nth-child(even) { border-right: none; }
+.ab-fact:nth-last-child(-n+2) { border-bottom: none; }
+.ab-fact-label { font-size: 10px; font-weight: 300; letter-spacing: .2em; color: var(--dimmer); margin-bottom: 4px; }
+.ab-fact-val { font-size: 12px; font-weight: 300; color: var(--offwhite); line-height: 1.5; }
+@media (max-width: 860px) {
+  .about-pin-wrap { height: auto; }
+  .about-pin-inner { position: relative; }
+  .about-layout { grid-template-columns: 1fr; grid-template-rows: auto; min-height: unset; padding: var(--gap) var(--side); }
+  .about-header { grid-column: 1; grid-row: 1; }
+  .about-right-top { grid-column: 1; grid-row: 2; margin-bottom: 40px; }
+  .about-timeline-wrap { grid-column: 1; grid-row: 3; }
+  .about-right-bottom { grid-column: 1; grid-row: 4; margin-top: 40px; border-top: 1px solid var(--line); padding-top: 40px; }
+  .about-facts { grid-template-columns: 1fr; }
+  .ab-fact { border-right: none !important; border-bottom: 1px solid var(--line) !important; }
+  .ab-fact:last-child { border-bottom: none !important; }
+  .about-photo { max-height: 260px; }
+}
+
+/* ── PRODUCTION ── */
+.prod-sec { background: var(--black2); }
+.prod-layout {
+  display: grid; grid-template-columns: 1.1fr 1fr;
+  gap: 80px; align-items: start;
+}
+.prod-col-right {
+  display: flex; flex-direction: column; justify-content: space-between;
+}
+/* slideshow */
+.prod-slideshow {
+  position: relative; height: clamp(360px, 50vw, 600px); overflow: hidden;
+}
+.prod-slideshow::after {
+  content: '';
+  position: absolute; inset: 0;
+  border: 1px solid var(--line); pointer-events: none; z-index: 2;
+}
+.prod-slide {
+  position: absolute; inset: 0;
+  opacity: 0; transition: opacity .9s ease;
+}
+.prod-slide.active { opacity: 1; }
+.prod-slide img {
+  width: 100%; height: 100%; object-fit: cover;
+  filter: saturate(1.1) brightness(.72);
+}
+.slide-counter {
+  position: absolute; bottom: 14px; left: 20px; z-index: 3;
+  font-size: 10px; font-weight: 300; letter-spacing: .18em; color: var(--dim);
+}
+.slide-dots {
+  position: absolute; bottom: 14px; right: 20px; z-index: 3;
+  display: flex; gap: 6px;
+}
+.slide-dot {
+  width: 20px; height: 1px; background: rgba(240,239,232,.25);
+  transition: background .3s;
+}
+.slide-dot.active { background: var(--offwhite); }
+
+.prod-steps { margin-top: 32px; display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--line); border: 1px solid var(--line); }
+.p-step {
+  background: var(--black2);
+  display: flex; flex-direction: column;
+  gap: 6px;
+  padding: 16px 18px;
+}
+.ps-glyph {
+  font-family: var(--zh); font-size: 18px; font-weight: 300;
+  color: rgba(240,239,232,.18); line-height: 1;
+}
+.ps-title { font-size: 12px; font-weight: 300; color: var(--offwhite); letter-spacing: .04em; }
+.ps-text  { font-size: 11px; font-weight: 300; color: var(--dimmer); line-height: 1.82; }
+.certs-row { display: flex; flex-direction: column; gap: 0; margin-top: 40px; border-top: 1px solid var(--line); }
+.cert-row {
+  display: flex; align-items: center; gap: 16px;
+  padding: 14px 0; border-bottom: 1px solid var(--line);
+}
+.cert-row:last-child { border-bottom: none; }
+.cert-tick { font-size: 11px; color: var(--accent); }
+.cert-name { font-size: 13px; font-weight: 300; color: var(--offwhite); }
+.cert-sub  { font-size: 11px; font-weight: 300; color: var(--dimmer); margin-left: auto; white-space: nowrap; }
+
+@media (max-width: 860px) {
+  .prod-layout { grid-template-columns: 1fr; }
+  .prod-layout > div:first-child { order: 2; }
+  .prod-col-right { order: 1; }
+}
+
+/* ── TERMS ── */
+.terms-sec { background: var(--black); }
+.terms-row {
+  display: grid; grid-template-columns: repeat(4, 1fr);
+  gap: 0; border: 1px solid var(--line); margin-top: 52px;
+}
+.t-item {
+  padding: 32px 28px; border-right: 1px solid var(--line);
+}
+.t-item:last-child { border-right: none; }
+.t-label { font-size: 10px; font-weight: 300; letter-spacing: .2em; color: var(--dimmer); margin-bottom: 10px; }
+.t-val-zh { font-family: var(--zh); font-size: 32px; font-weight: 300; color: var(--offwhite); line-height: 1; margin-bottom: 6px; letter-spacing: .04em; }
+.t-note { font-size: 11px; font-weight: 300; color: var(--dimmer); line-height: 1.82; }
+
+@media (max-width: 860px) {
+  .terms-row { grid-template-columns: 1fr 1fr; }
+  .terms-row .t-item:nth-child(1),
+  .terms-row .t-item:nth-child(2) { border-bottom: 1px solid var(--line); }
+  .terms-row .t-item:nth-child(2) { border-right: none; }
+  .terms-row .t-item:nth-child(3) { border-right: 1px solid var(--line); }
+}
+@media (max-width: 500px) {
+  .terms-row { grid-template-columns: 1fr; }
+  .terms-row .t-item { border-right: none; border-bottom: 1px solid var(--line); }
+  .terms-row .t-item:last-child { border-bottom: none; }
+}
+
+/* ── REVIEWS ── */
+.rev-sec { background: var(--black2); }
+.rev-carousel-wrap {
+  margin-top: 52px; position: relative;
+}
+.rev-carousel {
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 1fr;
+  gap: 1px; background: var(--line); border: 1px solid var(--line);
+  overflow: hidden;
+}
+.rev-card {
+  background: var(--black2); overflow: hidden;
+  display: flex; flex-direction: column; gap: 0;
+}
+.rev-card-body {
+  padding: 28px 28px 24px;
+  display: flex; flex-direction: column; gap: 0; flex: 1;
+}
+.rev-quote-glyph {
+  font-family: var(--zh); font-size: 32px; font-weight: 200;
+  color: rgba(240,239,232,.1); line-height: 1; margin-bottom: 16px;
+}
+.rev-text {
+  font-size: 13px; font-weight: 300; color: var(--dim);
+  line-height: 1.82; flex: 1; font-style: italic;
+}
+/* square photo + caption at bottom */
+.rev-person {
+  display: flex; align-items: center; gap: 14px;
+  padding: 20px 28px;
+  border-top: 1px solid var(--line);
+  margin-top: auto;
+}
+.rev-avatar-large {
+  width: 56px; height: 56px; overflow: hidden; flex-shrink: 0;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+}
+.rev-avatar-large img {
+  width: 100%; height: 100%; object-fit: cover; object-position: center top;
+  filter: grayscale(.1) brightness(.88);
+  display: block;
+}
+.rev-name { font-size: 12px; font-weight: 300; color: var(--offwhite); }
+.rev-co   { font-size: 10px; font-weight: 300; color: var(--dimmer); margin-top: 3px; letter-spacing: .04em; }
+.rev-avatar { display: none; }
+/* carousel nav */
+.rev-nav {
+  display: flex; align-items: center; justify-content: flex-end;
+  gap: 10px; margin-top: 20px;
+}
+.rev-nav-btn {
+  width: 40px; height: 40px; border: 1px solid var(--line);
+  background: transparent; color: var(--dim); font-size: 16px;
+  cursor: pointer; display: flex; align-items: center; justify-content: center;
+  transition: border-color .2s, color .2s;
+}
+.rev-nav-btn:hover { border-color: var(--offwhite); color: var(--offwhite); }
+.rev-nav-count {
+  font-size: 11px; font-weight: 300; letter-spacing: .14em; color: var(--dimmer);
+  min-width: 48px; text-align: center;
+}
+@media (max-width: 860px) {
+  .rev-carousel { grid-template-columns: 1fr; }
+}
+
+/* ── CONTACT ── */
+.contact-sec {
+  background: var(--black2);
+  position: relative;
+  overflow: hidden;
+}
+.contact-video-bg {
+  position: absolute; inset: 0; z-index: 0;
+  pointer-events: none;
+}
+.contact-video-bg img {
+  width: 100%; height: 100%; object-fit: cover;
+  opacity: .35;
+  display: block;
+}
+.contact-sec .sec-inner { position: relative; z-index: 1; }
+.contact-layout {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 80px; align-items: start;
+}
+.contact-layout > div:last-child { margin-top: 0; }
+.contact-info { margin-top: 44px; display: flex; flex-direction: column; gap: 0; }
+.ci { display: flex; gap: 18px; align-items: start; padding: 18px 0; border-bottom: 1px solid rgba(240,239,232,.28); }
+.ci:last-child { border-bottom: none; }
+.ci-icon { font-family: var(--zh); font-size: 16px; color: var(--offwhite); padding-top: 1px; min-width: 20px; }
+.ci-label { font-size: 10px; font-weight: 300; letter-spacing: .2em; color: var(--dimmer); margin-bottom: 3px; }
+.ci-val   { font-size: 13px; font-weight: 300; color: var(--offwhite); }
+.form-box {
+  border: 1px solid var(--line); padding: 40px;
+  margin-top: 0; background: var(--black2);
+}
+.form-box h3 {
+  font-family: var(--zh); font-size: 24px; font-weight: 300;
+  color: var(--offwhite); margin-bottom: 28px; letter-spacing: .04em;
+}
+.f-group { display: flex; flex-direction: column; gap: 16px; }
+.f-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.f-field { display: flex; flex-direction: column; gap: 7px; }
+.f-label { font-size: 10px; font-weight: 300; letter-spacing: .2em; color: var(--dimmer); }
+.f-field input,
+.f-field select,
+.f-field textarea {
+  padding: 12px 16px; border: 1px solid rgba(240,239,232,.10);
+  background: var(--black3); color: var(--dim);
+  font-family: var(--en); font-size: 13px; font-weight: 400;
+  outline: none; transition: border-color .2s; resize: vertical;
+  border-radius: 0; -webkit-appearance: none; appearance: none;
+}
+.f-field input:focus,
+.f-field select:focus,
+.f-field textarea:focus { border-color: rgba(240,239,232,.5); }
+.f-field input::placeholder,
+.f-field textarea::placeholder { color: rgba(240,239,232,.3); }
+.f-field textarea { min-height: 96px; }
+.f-field select {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath d='M1 1l4 4 4-4' stroke='rgba(240,239,232,.5)' stroke-width='1.2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat; background-position: right 14px center;
+  padding-right: 36px; cursor: pointer; color: var(--dim);
+}
+.f-field select option { background: var(--black2); color: var(--offwhite); }
+.f-submit {
+  width: 100%; padding: 15px; border: 1px solid var(--offwhite);
+  background: transparent; color: var(--offwhite);
+  font-family: var(--en); font-size: 11px; font-weight: 300;
+  letter-spacing: .2em; cursor: pointer;
+  transition: background .2s, color .2s; margin-top: 4px;
+}
+.f-submit:hover { background: var(--offwhite); color: var(--black); }
+.f-fine { font-size: 11px; font-weight: 300; color: var(--dimmer); margin-top: 10px; line-height: 1.65; }
+.f-sent {
+  display: none; padding: 20px; border: 1px solid var(--line);
+  color: var(--dim); font-size: 13px; font-weight: 300;
+  text-align: center; letter-spacing: .08em;
+}
+
+@media (max-width: 860px) {
+  .contact-layout { grid-template-columns: 1fr; }
+  .form-box { margin-top: 0; padding: 28px; }
+}
+@media (max-width: 500px) { .f-row { grid-template-columns: 1fr; } }
+
+/* ── FOOTER ── */
+footer {
+  border-top: 1px solid var(--line);
+  padding: clamp(48px,7vh,72px) var(--side) 32px;
+  background: var(--black);
+}
+.ft-inner { max-width: var(--max); margin: 0 auto; }
+.ft-top {
+  display: flex; justify-content: space-between; align-items: flex-start;
+  gap: 40px; flex-wrap: wrap; margin-bottom: 40px;
+}
+.ft-logo { display: flex; flex-direction: column; gap: 6px; text-decoration: none; }
+.ft-zh { font-family: var(--zh); font-size: 20px; font-weight: 300; color: var(--dim); }
+.ft-tagline { font-size: 11px; font-weight: 300; letter-spacing: .14em; color: var(--dimmer); }
+.ft-nav-row {
+  display: flex; gap: 28px; flex-wrap: wrap; align-items: center;
+}
+.ft-nav-row a {
+  font-size: 12px; font-weight: 300; letter-spacing: .10em;
+  color: var(--dim); text-decoration: none; transition: color .2s;
+}
+.ft-nav-row a:hover { color: var(--offwhite); }
+.ft-mid {
+  padding: 20px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);
+  display: flex; gap: 28px; flex-wrap: wrap; margin-bottom: 24px;
+}
+.ft-mid a {
+  font-size: 11px; font-weight: 300; letter-spacing: .10em;
+  color: var(--dimmer); text-decoration: none; transition: color .2s;
+}
+.ft-mid a:hover { color: var(--dim); }
+.ft-bottom {
+  display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;
+}
+.ft-copy { font-size: 11px; font-weight: 300; color: var(--dimmer); letter-spacing: .06em; }
+.ft-disclaimer { font-size: 10px; font-weight: 300; color: var(--dimmer); letter-spacing: .04em; }
+@media (max-width: 860px) { .ft-nav-row, .ft-mid { gap: 16px; } }
+
+/* ── WHATSAPP BUTTON ── */
+.wa-btn {
+  position: fixed; bottom: 32px; right: 32px; z-index: 500;
+  display: flex; align-items: center; gap: 10px;
+  padding: 12px 20px 12px 16px;
+  background: var(--black2); border: 1px solid rgba(240,239,232,.18);
+  color: var(--dim); text-decoration: none;
+  font-family: var(--en); font-size: 11px; font-weight: 300; letter-spacing: .12em;
+  transition: border-color .25s, color .25s, background .25s;
+  box-shadow: 0 8px 32px rgba(0,0,0,.45);
+}
+.wa-btn:hover {
+  border-color: rgba(240,239,232,.45); color: var(--offwhite);
+  background: color-mix(in srgb, var(--black2) 85%, var(--offwhite));
+}
+.wa-icon {
+  width: 18px; height: 18px; flex-shrink: 0;
+  opacity: .7; transition: opacity .25s;
+}
+.wa-btn:hover .wa-icon { opacity: 1; }
+@media (max-width: 600px) {
+  .wa-btn { bottom: 20px; right: 20px; padding: 11px 16px 11px 14px; }
+  .wa-label { display: none; }
+}
+
+/* ── LEGAL MODALS ── */
+.lm-overlay {
+  display: none; position: fixed; inset: 0; z-index: 1000;
+  background: rgba(12,13,10,.88); backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  align-items: center; justify-content: center;
+  padding: clamp(16px,4vw,48px);
+}
+.lm-overlay.open { display: flex; }
+.lm-box {
+  position: relative;
+  width: 100%; max-width: 680px;
+  max-height: 88vh;
+  background: var(--black2); border: 1px solid var(--line);
+  display: flex; flex-direction: column;
+}
+.lm-head {
+  padding: 32px 36px 24px;
+  border-bottom: 1px solid var(--line);
+  flex-shrink: 0;
+}
+.lm-eyebrow {
+  font-size: 10px; font-weight: 300; letter-spacing: .18em;
+  color: var(--accent); text-transform: uppercase; margin-bottom: 8px;
+}
+.lm-title {
+  font-family: var(--zh); font-size: 22px; font-weight: 300;
+  color: var(--offwhite); letter-spacing: .04em;
+}
+.lm-close {
+  position: absolute; top: 20px; right: 24px;
+  background: none; border: none; color: var(--dimmer);
+  font-size: 20px; cursor: pointer; line-height: 1;
+  transition: color .2s; padding: 4px;
+}
+.lm-close:hover { color: var(--offwhite); }
+.lm-body {
+  padding: 28px 36px 32px; overflow-y: auto; flex: 1;
+  scrollbar-width: thin; scrollbar-color: rgba(240,239,232,.18) transparent;
+}
+.lm-body::-webkit-scrollbar { width: 3px; }
+.lm-body::-webkit-scrollbar-track { background: transparent; }
+.lm-body::-webkit-scrollbar-thumb { background: rgba(240,239,232,.18); }
+.lm-body::-webkit-scrollbar-thumb:hover { background: rgba(240,239,232,.35); }
+.lm-section { margin-bottom: 28px; }
+.lm-section:last-child { margin-bottom: 0; }
+.lm-sh {
+  font-size: 11px; font-weight: 300; letter-spacing: .14em;
+  color: var(--offwhite); text-transform: uppercase; margin-bottom: 10px;
+  padding-bottom: 8px; border-bottom: 1px solid var(--line);
+}
+.lm-p {
+  font-size: 12px; font-weight: 300; color: var(--dimmer);
+  line-height: 1.82; margin-bottom: 10px;
+}
+.lm-p:last-child { margin-bottom: 0; }
+.lm-p a { color: var(--accent); text-decoration: none; }
+.lm-p a:hover { text-decoration: underline; }
+/* cookie checkboxes */
+.lm-foot {
+  padding: 20px 36px 24px;
+  border-top: 1px solid var(--line);
+  flex-shrink: 0;
+}
+.lm-checks {
+  display: flex; flex-direction: column; gap: 12px; margin-bottom: 20px;
+}
+.lm-check-row {
+  display: flex; align-items: flex-start; gap: 12px;
+}
+.lm-check-row input[type="checkbox"] {
+  appearance: none; -webkit-appearance: none;
+  width: 14px; height: 14px; min-width: 14px;
+  border: 1px solid rgba(240,239,232,.35); background: transparent;
+  cursor: pointer; margin-top: 1px; position: relative;
+  transition: border-color .2s, background .2s;
+}
+.lm-check-row input[type="checkbox"]:checked {
+  background: var(--accent); border-color: var(--accent);
+}
+.lm-check-row input[type="checkbox"]:checked::after {
+  content: '✓'; position: absolute; inset: 0;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 9px; color: #fff; line-height: 1;
+}
+.lm-check-row input[type="checkbox"]:disabled {
+  opacity: .4; cursor: not-allowed;
+}
+.lm-check-label { font-size: 12px; font-weight: 300; color: var(--dim); line-height: 1.6; }
+.lm-check-label strong { color: var(--offwhite); font-weight: 300; }
+.lm-btns { display: flex; gap: 10px; flex-wrap: wrap; }
+.lm-btn {
+  padding: 10px 22px; font-family: var(--en); font-size: 10px;
+  font-weight: 300; letter-spacing: .16em; cursor: pointer;
+  transition: background .2s, color .2s, border-color .2s;
+}
+.lm-btn-primary {
+  background: transparent; border: 1px solid var(--offwhite);
+  color: var(--offwhite);
+}
+.lm-btn-primary:hover { background: var(--offwhite); color: var(--black); }
+.lm-btn-secondary {
+  background: transparent; border: 1px solid var(--line);
+  color: var(--dimmer);
+}
+.lm-btn-secondary:hover { border-color: var(--dimmer); color: var(--dim); }
+.lm-btn-ghost {
+  background: transparent; border: none;
+  color: var(--dimmer); padding-left: 0; padding-right: 0;
+  text-decoration: underline; text-underline-offset: 3px;
+}
+.lm-btn-ghost:hover { color: var(--dim); }
+/* gdpr form */
+.lm-form-row { display: flex; flex-direction: column; gap: 6px; margin-bottom: 16px; }
+.lm-label { font-size: 10px; font-weight: 300; letter-spacing: .12em; color: var(--dimmer); }
+.lm-input {
+  background: transparent; border: 1px solid var(--line);
+  color: var(--offwhite); font-family: var(--en); font-size: 12px;
+  font-weight: 300; padding: 10px 14px; outline: none;
+  transition: border-color .2s;
+}
+.lm-input:focus { border-color: rgba(240,239,232,.4); }
+.lm-select {
+  background: var(--black); border: 1px solid var(--line);
+  color: var(--offwhite); font-family: var(--en); font-size: 12px;
+  font-weight: 300; padding: 10px 14px; outline: none;
+  cursor: pointer; appearance: none;
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="nav">
+  <a href="#" class="n-logo">
+    <span class="n-zh">一葉</span>
+    <span class="n-sep"></span>
+    <span class="n-en">Yi Ye Estate</span>
+  </a>
+  <ul class="n-links">
+    <li><a href="#teas">Products</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#production">Production</a></li>
+    <li><a href="#terms">Terms</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+
+  <a href="#contact" class="n-cta">Request catalogue</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg">
+    <video
+      src="https://res.cloudinary.com/blz27p9k/video/upload/v1793976130/small_hero.mp4"
+      autoplay
+      muted
+      loop
+      playsinline
+      preload="auto"
+    ></video>
+  </div>
+
+
+
+  <!-- center -->
+  <div class="hero-center">
+    <span class="hero-center-en">Single-Origin Tea &nbsp;·&nbsp; Direct from Source</span>
+  </div>
+
+  <!-- bottom: big ZH left / buttons center / big ZH right -->
+  <div class="hero-bottom">
+    <div class="hero-bottom-left">
+      <span class="hero-big-zh">甄選</span>
+      <span class="hero-big-sub">Carefully selected</span>
+    </div>
+    <div class="hero-bottom-center">
+      <span class="hero-bottom-desc">一葉茶莊<br>Yi Ye Estate</span>
+      <div class="hero-btns">
+        <a href="#contact" class="btn-o">Request a catalogue</a>
+        <a href="#teas" class="btn-ghost">View products</a>
+      </div>
+    </div>
+    <div class="hero-bottom-right">
+      <span class="hero-big-zh">岩茶</span>
+      <span class="hero-big-sub" style="text-align:right">Rock oolong</span>
+    </div>
+  </div>
+</section>
+
+<!-- TICKER -->
+<div class="ticker">
+  <div class="ticker-track">
+    <span class="ticker-item"><span class="t-sep">茶</span> Single-estate, Fujian Province</span>
+    <span class="ticker-item"><span class="t-sep">葉</span> Hand-picked since 1987</span>
+    <span class="ticker-item"><span class="t-sep">源</span> Full batch traceability</span>
+    <span class="ticker-item"><span class="t-sep">品</span> ISO 22000 certified</span>
+    <span class="ticker-item"><span class="t-sep">出</span> FOB Xiamen export</span>
+    <span class="ticker-item"><span class="t-sep">純</span> No intermediaries</span>
+    <span class="ticker-item"><span class="t-sep">茶</span> Single-estate, Fujian Province</span>
+    <span class="ticker-item"><span class="t-sep">葉</span> Hand-picked since 1987</span>
+    <span class="ticker-item"><span class="t-sep">源</span> Full batch traceability</span>
+    <span class="ticker-item"><span class="t-sep">品</span> ISO 22000 certified</span>
+    <span class="ticker-item"><span class="t-sep">出</span> FOB Xiamen export</span>
+    <span class="ticker-item"><span class="t-sep">純</span> No intermediaries</span>
+  </div>
+</div>
+
+<!-- TEAS -->
+<section class="sec teas-sec" id="teas">
+  <div class="sec-inner">
+    <div class="teas-head">
+      <div>
+        <span class="sec-eyebrow">Product range</span>
+        <div class="sec-title-zh">六茗精選</div>
+        <div class="sec-title-en">Six teas, one estate</div>
+      </div>
+      <p class="teas-note">All prices are FOB Xiamen. Each batch is numbered and dated at harvest. Certificates of origin and third-party lab reports available on request.</p>
+    </div>
+    <div class="teas-grid">
+
+      <div class="tea-card">
+        <div class="tea-img">
+          <img src="https://res.cloudinary.com/blz27p9k/image/upload/v1793892190/Bai_Mudan.png" alt="Bai Mudan white tea" loading="lazy">
+          <div class="tea-img-overlay"></div>
+          <div class="tea-glyph">白</div>
+        </div>
+        <div class="tea-body">
+          <span class="tea-type">White Tea</span>
+          <div class="tea-name-zh">白牡丹</div>
+          <div class="tea-name-en">Bai Mudan — White Peony</div>
+          <p class="tea-flavor">Honeyed, floral, light body. Spring and autumn harvests. Gentle on the palate; a natural entry point to single-origin tea.</p>
+          <div class="tea-specs">
+            <div class="tea-spec">
+              <div class="ts-label">Harvest</div>
+              <div class="ts-val">Spring / Autumn</div>
+            </div>
+            <div class="tea-spec" style="padding-left:14px">
+              <div class="ts-label">MOQ</div>
+              <div class="ts-val">5 kg</div>
+            </div>
+          </div>
+          <button class="tea-link" data-tea="baimudan">Learn more <span class="tea-link-arrow">›</span></button>
+        </div>
+      </div>
+
+      <div class="tea-card">
+        <div class="tea-img">
+          <img src="https://res.cloudinary.com/blz27p9k/image/upload/v1793892190/Long_Jing2.png" alt="Long Jing green tea" loading="lazy">
+          <div class="tea-img-overlay"></div>
+          <div class="tea-glyph">龍</div>
+        </div>
+        <div class="tea-body">
+          <span class="tea-type">Green Tea</span>
+          <div class="tea-name-zh">龍井</div>
+          <div class="tea-name-en">Long Jing — Dragon Well</div>
+          <p class="tea-flavor">Chestnut, vegetal, clean finish. Pre-Qingming harvest only — the most tender flush of the season, available in limited quantity.</p>
+          <div class="tea-specs">
+            <div class="tea-spec">
+              <div class="ts-label">Harvest</div>
+              <div class="ts-val">Spring only</div>
+            </div>
+            <div class="tea-spec" style="padding-left:14px">
+              <div class="ts-label">MOQ</div>
+              <div class="ts-val">3 kg</div>
+            </div>
+          </div>
+          <button class="tea-link" data-tea="longjing">Learn more <span class="tea-link-arrow">›</span></button>
+        </div>
+      </div>
+
+      <div class="tea-card">
+        <div class="tea-img">
+          <img src="https://res.cloudinary.com/blz27p9k/image/upload/v1793892191/Tieguanyin.png" alt="Tieguanyin oolong tea" loading="lazy">
+          <div class="tea-img-overlay"></div>
+          <div class="tea-glyph">鐵</div>
+        </div>
+        <div class="tea-body">
+          <span class="tea-type">Oolong</span>
+          <div class="tea-name-zh">鐵觀音</div>
+          <div class="tea-name-en">Tieguanyin — Iron Goddess</div>
+          <p class="tea-flavor">Orchid, creamy, complex layering. Opens across multiple infusions. Spring and autumn harvests with distinct seasonal character.</p>
+          <div class="tea-specs">
+            <div class="tea-spec">
+              <div class="ts-label">Harvest</div>
+              <div class="ts-val">Spring / Autumn</div>
+            </div>
+            <div class="tea-spec" style="padding-left:14px">
+              <div class="ts-label">MOQ</div>
+              <div class="ts-val">5 kg</div>
+            </div>
+          </div>
+          <button class="tea-link" data-tea="tieguanyin">Learn more <span class="tea-link-arrow">›</span></button>
+        </div>
+      </div>
+
+      <div class="tea-card">
+        <div class="tea-img">
+          <img src="https://res.cloudinary.com/blz27p9k/image/upload/v1793892190/Rou_Gui.png" alt="Rou Gui rock oolong" loading="lazy">
+          <div class="tea-img-overlay"></div>
+          <div class="tea-glyph">岩</div>
+        </div>
+        <div class="tea-body">
+          <span class="tea-type">Rock Oolong</span>
+          <div class="tea-name-zh">肉桂岩茶</div>
+          <div class="tea-name-en">Rou Gui — Rock Cinnamon</div>
+          <p class="tea-flavor">Mineral, spiced, long persistent finish. Grown between rock formations — the terroir is irreplaceable. Spring harvest only, pre-booking required.</p>
+          <div class="tea-specs">
+            <div class="tea-spec">
+              <div class="ts-label">Harvest</div>
+              <div class="ts-val">Spring only</div>
+            </div>
+            <div class="tea-spec" style="padding-left:14px">
+              <div class="ts-label">MOQ</div>
+              <div class="ts-val">3 kg</div>
+            </div>
+          </div>
+          <button class="tea-link" data-tea="rougui">Learn more <span class="tea-link-arrow">›</span></button>
+        </div>
+      </div>
+
+      <div class="tea-card">
+        <div class="tea-img">
+          <img src="https://res.cloudinary.com/blz27p9k/image/upload/v1793892190/Dian_Hong.png" alt="Dian Hong black tea" loading="lazy">
+          <div class="tea-img-overlay"></div>
+          <div class="tea-glyph">紅</div>
+        </div>
+        <div class="tea-body">
+          <span class="tea-type">Black Tea</span>
+          <div class="tea-name-zh">滇紅金芽</div>
+          <div class="tea-name-en">Dian Hong — Yunnan Gold</div>
+          <p class="tea-flavor">Malt, natural cocoa, inherently sweet. Velvet body without astringency. Approachable for a wide audience; strong performer in premium retail.</p>
+          <div class="tea-specs">
+            <div class="tea-spec">
+              <div class="ts-label">Harvest</div>
+              <div class="ts-val">Spring / Summer</div>
+            </div>
+            <div class="tea-spec" style="padding-left:14px">
+              <div class="ts-label">MOQ</div>
+              <div class="ts-val">5 kg</div>
+            </div>
+          </div>
+          <button class="tea-link" data-tea="dianhong">Learn more <span class="tea-link-arrow">›</span></button>
+        </div>
+      </div>
+
+      <div class="tea-card">
+        <div class="tea-img">
+          <img src="https://res.cloudinary.com/blz27p9k/image/upload/v1793892190/Shu_Pu-erh.png" alt="Shu Pu-erh aged tea" loading="lazy">
+          <div class="tea-img-overlay"></div>
+          <div class="tea-glyph">普</div>
+        </div>
+        <div class="tea-body">
+          <span class="tea-type">Pu-erh</span>
+          <div class="tea-name-zh">熟普洱</div>
+          <div class="tea-name-en">Shu Pu-erh — Ripe Pu-erh</div>
+          <p class="tea-flavor">Earthy, full body, smooth and warming. Autumn harvest. Withstands multiple infusions; valued by specialty buyers for depth and consistency.</p>
+          <div class="tea-specs">
+            <div class="tea-spec">
+              <div class="ts-label">Harvest</div>
+              <div class="ts-val">Autumn</div>
+            </div>
+            <div class="tea-spec" style="padding-left:14px">
+              <div class="ts-label">MOQ</div>
+              <div class="ts-val">5 kg</div>
+            </div>
+          </div>
+          <button class="tea-link" data-tea="shupuerh">Learn more <span class="tea-link-arrow">›</span></button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- WHY DIRECT -->
+<section class="sec why-sec">
+  <div class="sec-inner">
+    <div class="why-bg-glyph">源</div>
+    <div class="why-layout">
+      <div>
+        <span class="sec-eyebrow">Why source direct</span>
+        <div class="sec-title-zh">直源優勢</div>
+        <div class="sec-title-en">What working with us actually means</div>
+        <div class="why-items">
+          <div class="why-item">
+            <div class="wi-icon">溯</div>
+            <div>
+              <div class="wi-title">Full traceability</div>
+              <p class="wi-text">Every batch carries a harvest date, field block number, and processing record. Your buyers can see exactly where and when their tea was made.</p>
+            </div>
+          </div>
+          <div class="why-item">
+            <div class="wi-icon">無</div>
+            <div>
+              <div class="wi-title">No intermediaries</div>
+              <p class="wi-text">You deal with the farm directly. That means producer pricing, faster communication, and someone who knows every lot personally.</p>
+            </div>
+          </div>
+          <div class="why-item">
+            <div class="wi-icon">牌</div>
+            <div>
+              <div class="wi-title">Private label available</div>
+              <p class="wi-text">We pack and label under your brand from 10 kg per SKU. We handle all origin documentation; you manage the market.</p>
+            </div>
+          </div>
+          <div class="why-item">
+            <div class="wi-icon">量</div>
+            <div>
+              <div class="wi-title">Flexible minimums</div>
+              <p class="wi-text">Starting orders from 3 kg per SKU. Volume pricing from 20 kg. We work with new importers who want to test before committing.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="why-photo">
+          <img src="https://res.cloudinary.com/blz27p9k/image/upload/v1793892308/Why_source_direct.png" alt="Tea farmer on hillside estate" loading="lazy">
+          <div class="why-photo-label">
+            <span>Wuyi Mountains, Block 3 — 1 350 m elevation</span>
+            <span>山</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="sec rev-sec">
+  <div class="sec-inner">
+    <span class="sec-eyebrow">Partners say</span>
+    <div class="sec-title-zh">合作夥伴</div>
+    <div class="sec-title-en">What buyers say after their first season</div>
+    <div class="rev-carousel-wrap">
+      <div class="rev-carousel" id="revCarousel">
+        <div class="rev-card rev-visible">
+          <div class="rev-card-body">
+            <div class="rev-quote-glyph">證</div>
+            <p class="rev-text">"We've sourced from Yi Ye for three seasons. The batch numbers and harvest dates make provenance conversations with our retail buyers completely effortless."</p>
+          </div>
+          <div class="rev-person">
+            <div class="rev-avatar-large">
+              <img src="https://res.cloudinary.com/blz27p9k/image/upload/v1793892563/%D0%9F%D0%BE%D1%80%D1%82%D1%80%D0%B5%D1%82_%D1%87%D0%BE%D0%BB%D0%BE%D0%B2%D1%96%D0%BA%D0%B0_%D0%B2_%D0%BE%D0%BB%D0%B8%D0%B2%D0%BA%D0%BE%D0%B2%D1%96%D0%B9_%D1%81%D0%BE%D1%80%D0%BE%D1%87%D1%86%D1%96.png" alt="Marcus W.">
+            </div>
+            <div>
+              <div class="rev-name">Marcus W.</div>
+              <div class="rev-co">Procurement, specialty importer — Germany</div>
+            </div>
+          </div>
+        </div>
+        <div class="rev-card rev-visible">
+          <div class="rev-card-body">
+            <div class="rev-quote-glyph">證</div>
+            <p class="rev-text">"The private label program let us launch our tea line without building a supply chain. Response times from the farm are faster than any broker we've worked with."</p>
+          </div>
+          <div class="rev-person">
+            <div class="rev-avatar-large">
+              <img src="https://res.cloudinary.com/blz27p9k/image/upload/v1793892564/%D0%9F%D0%BE%D1%80%D1%82%D1%80%D0%B5%D1%82_%D0%B6%D1%96%D0%BD%D0%BA%D0%B8_%D0%B2_%D0%B1%D0%B5%D0%B6%D0%B5%D0%B2%D0%BE%D0%BC%D1%83_%D1%81%D0%B2%D0%B5%D1%82%D1%80%D1%96.png" alt="Sophie L.">
+            </div>
+            <div>
+              <div class="rev-name">Sophie L.</div>
+              <div class="rev-co">Brand Director, premium grocery — France</div>
+            </div>
+          </div>
+        </div>
+        <div class="rev-card rev-visible">
+          <div class="rev-card-body">
+            <div class="rev-quote-glyph">證</div>
+            <p class="rev-text">"Rock oolong from a known farm changes the conversation at the table. Guests ask where it's from. That's the difference between a beverage and an experience."</p>
+          </div>
+          <div class="rev-person">
+            <div class="rev-avatar-large">
+              <img src="https://res.cloudinary.com/blz27p9k/image/upload/v1793892564/%D0%9F%D0%BE%D1%80%D1%82%D1%80%D0%B5%D1%82_%D1%87%D0%BE%D0%BB%D0%BE%D0%B2%D1%96%D0%BA%D0%B0_%D0%B7_%D1%81%D0%B8%D0%B2%D0%B8%D0%BD%D0%BE%D1%8E_%D1%83_%D0%B2%D0%BE%D0%BB%D0%BE%D1%81%D1%81%D1%96.png" alt="Thomas A.">
+            </div>
+            <div>
+              <div class="rev-name">Thomas A.</div>
+              <div class="rev-co">F&B Director, boutique hotel group — UK</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="rev-card">
+          <div class="rev-card-body">
+            <div class="rev-quote-glyph">證</div>
+            <p class="rev-text">"We were sceptical about cutting out the broker. Yi Ye's documentation — batch sheets, lab reports, harvest photos — made the decision straightforward. Our compliance team approved in a week."</p>
+          </div>
+          <div class="rev-person">
+            <div class="rev-avatar-large">
+              <img src="https://res.cloudinary.com/blz27p9k/image/upload/v1793974190/%D0%9F%D0%BE%D1%80%D1%82%D1%80%D0%B5%D1%82_%D1%83%D1%81%D0%BC%D1%96%D1%85%D0%BD%D0%B5%D0%BD%D0%BE%D1%97_%D0%B1%D0%BB%D0%BE%D0%BD%D0%B4%D0%B8%D0%BD%D0%BA%D0%B8.png" alt="Elena V.">
+            </div>
+            <div>
+              <div class="rev-name">Elena V.</div>
+              <div class="rev-co">Head of Sourcing, organic food retailer — Netherlands</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="rev-card">
+          <div class="rev-card-body">
+            <div class="rev-quote-glyph">證</div>
+            <p class="rev-text">"The Dian Hong sells itself — natural sweetness, no astringency, broad appeal. We put it in our house blend and in a single-origin tin. Both moved faster than anything else in the category this year."</p>
+          </div>
+          <div class="rev-person">
+            <div class="rev-avatar-large">
+              <img src="https://res.cloudinary.com/blz27p9k/image/upload/v1793974190/%D0%94%D0%BE%D0%B1%D1%80%D0%BE%D0%B7%D0%B8%D1%87%D0%BB%D0%B8%D0%B2%D0%B8%D0%B9_%D0%BF%D0%BE%D1%80%D1%82%D1%80%D0%B5%D1%82_%D0%B1%D0%BE%D1%80%D0%BE%D0%B4%D0%B0%D1%82%D0%BE%D0%B3%D0%BE_%D1%87%D0%BE%D0%BB%D0%BE%D0%B2%D1%96%D0%BA%D0%B0.png" alt="James R.">
+            </div>
+            <div>
+              <div class="rev-name">James R.</div>
+              <div class="rev-co">Category Manager, specialty tea chain — Australia</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="rev-card">
+          <div class="rev-card-body">
+            <div class="rev-quote-glyph">證</div>
+            <p class="rev-text">"We've been building a Japanese-style tea programme for two years. Finding a Chinese estate that ships with the same rigour — numbered batches, consistent moisture specs, cold-chain option — was the missing piece."</p>
+          </div>
+          <div class="rev-person">
+            <div class="rev-avatar-large">
+              <img src="https://res.cloudinary.com/blz27p9k/image/upload/v1793974191/%D0%9F%D0%BE%D1%80%D1%82%D1%80%D0%B5%D1%82_%D0%B6%D1%96%D0%BD%D0%BA%D0%B8_%D1%83_%D1%82%D0%B5%D0%BC%D0%BD%D0%BE%D0%BC%D1%83_%D1%81%D0%B2%D0%B5%D1%82%D1%80%D1%96.png" alt="Marta S.">
+            </div>
+            <div>
+              <div class="rev-name">Marta S.</div>
+              <div class="rev-co">Founder, premium tea bar — Poland</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="rev-nav">
+        <span class="rev-nav-count" id="revCount">1 / 2</span>
+        <button class="rev-nav-btn" id="revPrev" onclick="revMove(-1)">←</button>
+        <button class="rev-nav-btn" id="revNext" onclick="revMove(1)">→</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about-sec" id="about">
+  <div class="about-bg-glyph">家</div>
+  <div class="about-pin-wrap">
+    <div class="about-pin-inner">
+      <div class="about-layout">
+
+        <!-- LEFT: eyebrow + big title (row 1) + timeline (row 2) -->
+        <div class="about-header">
+          <span class="sec-eyebrow">Yi Ye Estate · Est. 1987</span>
+          <div class="sec-title-zh">茶莊故事</div>
+          <div class="sec-title-en">About the Estate</div>
+        </div>
+        <div class="about-timeline-wrap">
+          <div class="about-timeline">
+            <div class="tl-item">
+              <div class="tl-dot active"></div>
+              <div>
+                <div class="tl-year">1987</div>
+                <div class="tl-title">The Estate Founded</div>
+                <div class="tl-text">Lín Jiànmíng plants the first Da Hong Pao cultivars on inherited terraced land at 850 m elevation. All work done by hand.</div>
+              </div>
+            </div>
+            <div class="tl-item">
+              <div class="tl-dot"></div>
+              <div>
+                <div class="tl-year">2001</div>
+                <div class="tl-title">First Export License</div>
+                <div class="tl-text">After 14 years of domestic trade, Yi Ye ships its first wholesale consignment to a Japanese importer — beginning its international presence.</div>
+              </div>
+            </div>
+            <div class="tl-item">
+              <div class="tl-dot"></div>
+              <div>
+                <div class="tl-year">2009</div>
+                <div class="tl-title">Second Generation Takes Over</div>
+                <div class="tl-text">Lín Wěi introduces traceable lot documentation and expands the cultivar range to include Shui Xian and Rou Gui varietals.</div>
+              </div>
+            </div>
+            <div class="tl-item">
+              <div class="tl-dot"></div>
+              <div>
+                <div class="tl-year">2026</div>
+                <div class="tl-title">Direct Global Distribution</div>
+                <div class="tl-text">Yi Ye opens direct B2B wholesale to importers in Europe, North America, and Southeast Asia — no intermediaries, full traceability.</div>
+              </div>
+            </div>
+          </div>
+        </div><!-- /about-timeline-wrap -->
+
+        <!-- RIGHT row 1: description aligned with header -->
+        <div class="about-right-top">
+          <p class="about-desc">Yi Ye Estate is a family-owned single-origin tea farm nestled in the Wuyi Mountains of Fujian Province. For three generations, the Lín family has cultivated, processed, and exported teas that carry the character of the land — not the demands of the market.</p>
+        </div>
+
+        <!-- RIGHT row 2: photo + facts aligned with timeline -->
+        <div class="about-right-bottom">
+          <div class="about-photo">
+            <img src="https://res.cloudinary.com/blz27p9k/image/upload/v1793976507/u8848884441_Ultra_realistic_documentary_landscape_photograph__32c3056a-14a5-4a60-9a56-dd188e2ed732_3.png" alt="Yi Ye Estate tea garden" loading="lazy">
+          </div>
+          <div class="about-facts">
+            <div class="ab-fact">
+              <div class="ab-fact-label">Elevation</div>
+              <div class="ab-fact-val">820–940 m<br>above sea level</div>
+            </div>
+            <div class="ab-fact">
+              <div class="ab-fact-label">Estate size</div>
+              <div class="ab-fact-val">34 hectares<br>single terroir</div>
+            </div>
+            <div class="ab-fact">
+              <div class="ab-fact-label">Harvest method</div>
+              <div class="ab-fact-val">Hand-picked<br>two seasons/year</div>
+            </div>
+            <div class="ab-fact">
+              <div class="ab-fact-label">Export markets</div>
+              <div class="ab-fact-val">18 countries<br>since 2001</div>
+            </div>
+          </div>
+        </div><!-- /about-right-bottom -->
+
+      </div><!-- /about-layout -->
+    </div><!-- /about-pin-inner -->
+  </div><!-- /about-pin-wrap -->
+</section>
+
+<!-- PRODUCTION -->
+<section class="sec prod-sec" id="production">
+  <div class="sec-inner">
+    <div class="prod-layout">
+      <div>
+        <div class="prod-slideshow" id="prodSlideshow">
+          <div class="prod-slide active"><img src="https://res.cloudinary.com/blz27p9k/image/upload/v1793892459/1.png" alt="Production 1"></div>
+          <div class="prod-slide"><img src="https://res.cloudinary.com/blz27p9k/image/upload/v1793892459/2.png" alt="Production 2"></div>
+          <div class="prod-slide"><img src="https://res.cloudinary.com/blz27p9k/image/upload/v1793892459/3.png" alt="Production 3"></div>
+          <div class="prod-slide"><img src="https://res.cloudinary.com/blz27p9k/image/upload/v1793892459/4.png" alt="Production 4"></div>
+          <div class="prod-slide"><img src="https://res.cloudinary.com/blz27p9k/image/upload/v1793892460/5.png" alt="Production 5"></div>
+          <div class="prod-slide"><img src="https://res.cloudinary.com/blz27p9k/image/upload/v1793892460/6.png" alt="Production 6"></div>
+          <div class="prod-slide"><img src="https://res.cloudinary.com/blz27p9k/image/upload/v1793892460/7.png" alt="Production 7"></div>
+          <div class="prod-slide"><img src="https://res.cloudinary.com/blz27p9k/image/upload/v1793892461/8.png" alt="Production 8"></div>
+          <div class="prod-slide"><img src="https://res.cloudinary.com/blz27p9k/image/upload/v1793974336/3_2.png" alt="Production 9"></div>
+          <div class="prod-slide"><img src="https://res.cloudinary.com/blz27p9k/image/upload/v1793974337/3_1.png" alt="Production 10"></div>
+          <div class="slide-counter" id="slideCounter">01 / 10</div>
+          <div class="slide-dots" id="slideDots"></div>
+        </div>
+        <div class="certs-row">
+          <div class="cert-row">
+            <div class="cert-tick">✓</div>
+            <div class="cert-name">ISO 22000 — Food Safety</div>
+            <div class="cert-sub">Renewed annually</div>
+          </div>
+          <div class="cert-row">
+            <div class="cert-tick">✓</div>
+            <div class="cert-name">CERES Organic Certification</div>
+            <div class="cert-sub">No synthetics since 2008</div>
+          </div>
+          <div class="cert-row">
+            <div class="cert-tick">✓</div>
+            <div class="cert-name">EU Export Registration</div>
+            <div class="cert-sub">Direct export to EU states</div>
+          </div>
+        </div>
+      </div>
+      <div class="prod-col-right">
+        <span class="sec-eyebrow">Production & quality</span>
+        <div class="sec-title-zh">製茶工藝</div>
+        <div class="sec-title-en">How we process every harvest</div>
+        <p class="sec-lead">All processing happens on-site, by the same team that picks the leaf. No third-party facilities, no anonymous factory runs.</p>
+        <div class="prod-steps">
+          <div class="p-step">
+            <div class="ps-glyph">採</div>
+            <div>
+              <div class="ps-title">Hand-picking</div>
+              <p class="ps-text">Before 9 am only. Two leaves and a bud — no machine harvesting on our estate.</p>
+            </div>
+          </div>
+          <div class="p-step">
+            <div class="ps-glyph">萎</div>
+            <div>
+              <div class="ps-title">Withering</div>
+              <p class="ps-text">Spread on bamboo trays under natural airflow for 6–10 hours. No heated withering tunnels.</p>
+            </div>
+          </div>
+          <div class="p-step">
+            <div class="ps-glyph">揉</div>
+            <div>
+              <div class="ps-title">Rolling & oxidation</div>
+              <p class="ps-text">Degree varies by product. Rock oolongs undergo three charcoal roasting passes.</p>
+            </div>
+          </div>
+          <div class="p-step">
+            <div class="ps-glyph">焙</div>
+            <div>
+              <div class="ps-title">Drying & sorting</div>
+              <p class="ps-text">Hand-sorted at final stage. Every lot is tasted before packing.</p>
+            </div>
+          </div>
+          <div class="p-step">
+            <div class="ps-glyph">裝</div>
+            <div>
+              <div class="ps-title">Packing & dispatch</div>
+              <p class="ps-text">Foil-lined kraft, numbered and dated. FOB Xiamen, FCL and LCL.</p>
+            </div>
+          </div>
+          <div class="p-step p-step--outcome">
+            <div class="ps-glyph">茶</div>
+            <div>
+              <div class="ps-title">Your shelves, restocked</div>
+              <p class="ps-text">Your customers taste the difference. You reorder before the season ends.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TERMS -->
+<section class="sec terms-sec" id="terms">
+  <div class="sec-inner">
+    <span class="sec-eyebrow">Partnership terms</span>
+    <div class="sec-title-zh">合作條件</div>
+    <div class="sec-title-en">What to expect from a first order</div>
+    <div class="terms-row">
+      <div class="t-item">
+        <div class="t-label">Minimum order</div>
+        <div class="t-val-zh">三公斤</div>
+        <p class="t-note">Per SKU on first order. Volume pricing from 20 kg per SKU.</p>
+      </div>
+      <div class="t-item">
+        <div class="t-label">Lead time</div>
+        <div class="t-val-zh">兩至三週</div>
+        <p class="t-note">From order confirmation to FOB Xiamen. Seasonal teas require pre-booking.</p>
+      </div>
+      <div class="t-item">
+        <div class="t-label">Payment</div>
+        <div class="t-val-zh">三七付款</div>
+        <p class="t-note">30% deposit on confirmation, 70% against B/L copy. Net-30 from second order.</p>
+      </div>
+      <div class="t-item">
+        <div class="t-label">Shipping</div>
+        <div class="t-val-zh">廈門港出</div>
+        <p class="t-note">FOB Xiamen, FCL and LCL. DDP quotes available for EU partners.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="sec contact-sec" id="contact">
+  <div class="contact-video-bg">
+    <img src="https://res.cloudinary.com/blz27p9k/image/upload/v1793911493/u8848884441_Ultra_photorealistic_professional_landscape_photogr_e54f1f96-7a46-4a3a-a352-0c6349847989.png" alt="Tea estate landscape" loading="lazy">
+  </div>
+  <div class="sec-inner">
+    <div class="contact-layout">
+      <div>
+        <span class="sec-eyebrow">Get in touch</span>
+        <div class="sec-title-zh">聯絡我們</div>
+        <div class="sec-title-en">Start a conversation</div>
+        <p class="sec-lead">We reply within one business day. Tell us what you're looking for — a sample set, a price list, or a call — and we'll take it from there.</p>
+        <div class="contact-info">
+          <div class="ci">
+            <div class="ci-icon">信</div>
+            <div>
+              <div class="ci-label">Email</div>
+              <div class="ci-val">trade@yiye-estate.com</div>
+            </div>
+          </div>
+          <div class="ci">
+            <div class="ci-icon">話</div>
+            <div>
+              <div class="ci-label">WhatsApp / WeChat</div>
+              <div class="ci-val">+86 139 0000 0000</div>
+            </div>
+          </div>
+          <div class="ci">
+            <div class="ci-icon">地</div>
+            <div>
+              <div class="ci-label">Location</div>
+              <div class="ci-val">Wuyi Mountains, Fujian Province<br>Export via Port of Xiamen</div>
+            </div>
+          </div>
+          <div class="ci">
+            <div class="ci-icon">時</div>
+            <div>
+              <div class="ci-label">Response time</div>
+              <div class="ci-val">Within 1 business day (CST)</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="form-box">
+          <h3>詢盤表格</h3>
+          <div id="fSent" class="f-sent">Thank you — we will be in touch within one business day.</div>
+          <div id="fFields" class="f-group">
+            <div class="f-row">
+              <div class="f-field">
+                <label class="f-label">First name</label>
+                <input type="text" placeholder="Anna">
+              </div>
+              <div class="f-field">
+                <label class="f-label">Last name</label>
+                <input type="text" placeholder="Schmidt">
+              </div>
+            </div>
+            <div class="f-field">
+              <label class="f-label">Company</label>
+              <input type="text" placeholder="Your company name">
+            </div>
+            <div class="f-field">
+              <label class="f-label">Business email</label>
+              <input type="email" placeholder="anna@company.com">
+            </div>
+            <div class="f-field">
+              <label class="f-label">Country</label>
+              <input type="text" placeholder="Germany">
+            </div>
+            <div class="f-field">
+              <label class="f-label">I'm interested in</label>
+              <select>
+                <option value="">Select one</option>
+                <option>Price list & catalogue</option>
+                <option>Sample set</option>
+                <option>Private label / OEM</option>
+                <option>Introductory call</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="f-field">
+              <label class="f-label">Message (optional)</label>
+              <textarea placeholder="Products of interest, typical order volumes, or anything else useful."></textarea>
+            </div>
+            <button class="f-submit" onclick="sendForm()">Send enquiry</button>
+            <p class="f-fine">Trade enquiries only. We do not share your details with third parties.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="ft-inner">
+    <!-- Top row: logo only -->
+    <div class="ft-top">
+      <a href="#" class="ft-logo">
+        <span class="ft-zh">一葉茶莊</span>
+        <span class="ft-tagline">Yi Ye Estate · Wuyi Mountains, Fujian</span>
+      </a>
+    </div>
+
+    <!-- Legal row -->
+    <div class="ft-mid">
+      <a href="#" data-modal="privacy">Privacy Policy</a>
+      <a href="#" data-modal="cookie">Cookie Policy</a>
+      <a href="#" data-modal="terms">Terms &amp; Conditions</a>
+      <a href="#" data-modal="imprint">Imprint / Legal Notice</a>
+      <a href="#" data-modal="gdpr">GDPR Data Request</a>
+      <a href="#" data-modal="accessibility">Accessibility Statement</a>
+    </div>
+
+    <!-- Bottom row: copyright -->
+    <div class="ft-bottom">
+      <span class="ft-copy">&copy; 2026 Yi Ye Estate. All rights reserved.</span>
+      <span class="ft-disclaimer">Illustrative portfolio project — fictional brand. All names and data are fictitious.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- WhatsApp button -->
+<a class="wa-btn" href="https://wa.me/861390000000" target="_blank" rel="noopener noreferrer" aria-label="Contact us on WhatsApp">
+  <svg class="wa-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.978-1.42A9.956 9.956 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/>
+    <path d="M8.5 8.5c.2-.5.5-.5.7-.5h.6c.2 0 .4.1.5.3l.7 1.7c.1.2 0 .5-.1.6l-.5.6c.4.8 1.1 1.5 1.9 1.9l.6-.5c.2-.2.4-.2.6-.1l1.7.7c.2.1.3.3.3.5v.6c0 .3-.1.5-.4.7C14.5 15.5 9 14 8.5 8.5z" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
+  </svg>
+  <span class="wa-label">WhatsApp</span>
+</a>
+
+<!-- ── LEGAL MODALS ── -->
+
+<!-- Privacy Policy -->
+<div class="lm-overlay" id="modal-privacy">
+  <div class="lm-box">
+    <div class="lm-head">
+      <div class="lm-eyebrow">Legal</div>
+      <div class="lm-title">Privacy Policy</div>
+      <button class="lm-close" data-close="privacy">✕</button>
+    </div>
+    <div class="lm-body">
+      <div class="lm-section">
+        <div class="lm-sh">1. Data Controller</div>
+        <p class="lm-p">Yi Ye Estate (一葉茶莊), Wuyi Mountains, Fujian Province, China. Contact: <a href="mailto:trade@yiye-estate.com">trade@yiye-estate.com</a></p>
+      </div>
+      <div class="lm-section">
+        <div class="lm-sh">2. Data We Collect</div>
+        <p class="lm-p">When you submit our enquiry form we collect: first name, last name, company name, business email address, country, and any message you choose to provide. We do not collect payment data or personal consumer data.</p>
+        <p class="lm-p">We may also collect anonymised usage data (page views, session duration) via first-party analytics to improve this website.</p>
+      </div>
+      <div class="lm-section">
+        <div class="lm-sh">3. Purpose & Legal Basis</div>
+        <p class="lm-p">We process your data to respond to wholesale enquiries (legitimate interest / pre-contractual steps) and, with your consent, to send trade newsletters and product updates.</p>
+      </div>
+      <div class="lm-section">
+        <div class="lm-sh">4. Data Sharing</div>
+        <p class="lm-p">We do not sell or rent your data. Data may be shared with our email service provider and CRM platform solely to fulfil the purposes above. All processors are bound by GDPR-compliant data processing agreements.</p>
+      </div>
+      <div class="lm-section">
+        <div class="lm-sh">5. Retention</div>
+        <p class="lm-p">Enquiry data is retained for up to 3 years from last contact, or until you request deletion. Anonymised analytics data is retained for 13 months.</p>
+      </div>
+      <div class="lm-section">
+        <div class="lm-sh">6. Your Rights</div>
+        <p class="lm-p">You have the right to access, rectify, erase, restrict or port your data, and to object to processing. Submit requests via our GDPR Data Request link or email <a href="mailto:trade@yiye-estate.com">trade@yiye-estate.com</a>. You may also lodge a complaint with your national supervisory authority.</p>
+      </div>
+      <div class="lm-section">
+        <div class="lm-sh">7. Updates</div>
+        <p class="lm-p">This policy was last updated November 2026. Material changes will be communicated by email to active trade contacts.</p>
+      </div>
+    </div>
+    <div class="lm-foot">
+      <div class="lm-btns">
+        <button class="lm-btn lm-btn-primary" data-close="privacy">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Cookie Policy -->
+<div class="lm-overlay" id="modal-cookie">
+  <div class="lm-box">
+    <div class="lm-head">
+      <div class="lm-eyebrow">Legal</div>
+      <div class="lm-title">Cookie Policy</div>
+      <button class="lm-close" data-close="cookie">✕</button>
+    </div>
+    <div class="lm-body">
+      <div class="lm-section">
+        <div class="lm-sh">What Are Cookies</div>
+        <p class="lm-p">Cookies are small text files stored in your browser when you visit a website. They allow us to recognise returning visitors, understand how the site is used, and improve your experience.</p>
+      </div>
+      <div class="lm-section">
+        <div class="lm-sh">Cookies We Use</div>
+        <p class="lm-p"><strong>Strictly necessary</strong> — Required for the site to function (session state, security token). Cannot be disabled.</p>
+        <p class="lm-p"><strong>Analytics</strong> — Anonymised page-view and session data via first-party analytics. Helps us understand which content is most relevant to buyers.</p>
+        <p class="lm-p"><strong>Preferences</strong> — Remembers your cookie choices and form field state so you are not asked repeatedly.</p>
+        <p class="lm-p"><strong>Marketing</strong> — Used only if you opt in. Allows retargeting on trade platforms (LinkedIn, Google Ads) to reach relevant wholesale buyers.</p>
+      </div>
+    </div>
+    <div class="lm-foot">
+      <div class="lm-checks">
+        <div class="lm-check-row">
+          <input type="checkbox" id="ck-necessary" checked disabled>
+          <label class="lm-check-label" for="ck-necessary"><strong>Strictly necessary</strong> — Always active</label>
+        </div>
+        <div class="lm-check-row">
+          <input type="checkbox" id="ck-analytics" checked>
+          <label class="lm-check-label" for="ck-analytics"><strong>Analytics</strong> — Anonymised usage statistics</label>
+        </div>
+        <div class="lm-check-row">
+          <input type="checkbox" id="ck-prefs" checked>
+          <label class="lm-check-label" for="ck-prefs"><strong>Preferences</strong> — Remember your choices</label>
+        </div>
+        <div class="lm-check-row">
+          <input type="checkbox" id="ck-marketing">
+          <label class="lm-check-label" for="ck-marketing"><strong>Marketing</strong> — Trade platform retargeting</label>
+        </div>
+      </div>
+      <div class="lm-btns">
+        <button class="lm-btn lm-btn-primary" data-close="cookie" onclick="saveCookies()">Save my choices</button>
+        <button class="lm-btn lm-btn-secondary" data-close="cookie" onclick="acceptAll()">Accept all</button>
+        <button class="lm-btn lm-btn-ghost" data-close="cookie" onclick="rejectOptional()">Reject optional</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Terms & Conditions -->
+<div class="lm-overlay" id="modal-terms">
+  <div class="lm-box">
+    <div class="lm-head">
+      <div class="lm-eyebrow">Legal</div>
+      <div class="lm-title">Terms &amp; Conditions</div>
+      <button class="lm-close" data-close="terms">✕</button>
+    </div>
+    <div class="lm-body">
+      <div class="lm-section">
+        <div class="lm-sh">1. Scope</div>
+        <p class="lm-p">These terms govern all wholesale trade enquiries, sample requests, and purchase orders placed with Yi Ye Estate. By submitting an enquiry you accept these terms.</p>
+      </div>
+      <div class="lm-section">
+        <div class="lm-sh">2. Orders & Pricing</div>
+        <p class="lm-p">All prices are quoted in USD, ex-works (EXW) Fujian unless otherwise stated. Prices are valid for 30 days from the date of quotation. Minimum order quantities apply per SKU (see Partnership Terms section).</p>
+      </div>
+      <div class="lm-section">
+        <div class="lm-sh">3. Payment</div>
+        <p class="lm-p">30% deposit on order confirmation, balance against bill of lading copy. Net-30 terms available from second order subject to credit review. We accept T/T (bank transfer) and trade finance instruments.</p>
+      </div>
+      <div class="lm-section">
+        <div class="lm-sh">4. Delivery & Risk</div>
+        <p class="lm-p">Goods are delivered FOB Xiamen Port. Risk transfers to buyer upon loading. We provide full shipping documentation including phytosanitary certificate, certificate of origin, and batch test reports.</p>
+      </div>
+      <div class="lm-section">
+        <div class="lm-sh">5. Quality & Claims</div>
+        <p class="lm-p">Each lot is tested prior to dispatch. Claims for quality discrepancies must be submitted within 14 days of delivery with photographic evidence and third-party lab results. We do not accept claims for organoleptic preferences.</p>
+      </div>
+      <div class="lm-section">
+        <div class="lm-sh">6. Intellectual Property</div>
+        <p class="lm-p">The Yi Ye Estate name, 一葉茶莊 trademark, and all product photography are the property of Yi Ye Estate. Use in buyer marketing materials requires written permission.</p>
+      </div>
+      <div class="lm-section">
+        <div class="lm-sh">7. Governing Law</div>
+        <p class="lm-p">These terms are governed by the laws of the People's Republic of China. Disputes shall be submitted to the Xiamen Arbitration Commission.</p>
+      </div>
+    </div>
+    <div class="lm-foot">
+      <div class="lm-btns">
+        <button class="lm-btn lm-btn-primary" data-close="terms">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Imprint / Legal Notice -->
+<div class="lm-overlay" id="modal-imprint">
+  <div class="lm-box">
+    <div class="lm-head">
+      <div class="lm-eyebrow">Legal</div>
+      <div class="lm-title">Imprint / Legal Notice</div>
+      <button class="lm-close" data-close="imprint">✕</button>
+    </div>
+    <div class="lm-body">
+      <div class="lm-section">
+        <div class="lm-sh">Company Details</div>
+        <p class="lm-p"><strong>Trading name:</strong> Yi Ye Estate (一葉茶莊)<br>
+        <strong>Registered address:</strong> Wuyi Mountains, Fujian Province, China 354300<br>
+        <strong>Business registration:</strong> Fujian Province, China<br>
+        <strong>Unified Social Credit Code:</strong> 91350000XXXXXXXX (illustrative)</p>
+      </div>
+      <div class="lm-section">
+        <div class="lm-sh">Contact</div>
+        <p class="lm-p"><strong>Trade enquiries:</strong> <a href="mailto:trade@yiye-estate.com">trade@yiye-estate.com</a><br>
+        <strong>WhatsApp / WeChat:</strong> +86 139 0000 0000<br>
+        <strong>Response time:</strong> Within 1 business day (CST, UTC+8)</p>
+      </div>
+      <div class="lm-section">
+        <div class="lm-sh">Export</div>
+        <p class="lm-p"><strong>Export via:</strong> Port of Xiamen (FOB)<br>
+        <strong>EU Export Registration:</strong> Active<br>
+        <strong>Phytosanitary certification:</strong> Issued per shipment by Fujian Entry-Exit Inspection and Quarantine Bureau</p>
+      </div>
+      <div class="lm-section">
+        <div class="lm-sh">Disclaimer</div>
+        <p class="lm-p">This website is intended for trade buyers only. All product specifications, pricing, and availability are subject to change without notice. This is an illustrative portfolio project — all brand names, registration numbers, and personnel are fictitious.</p>
+      </div>
+    </div>
+    <div class="lm-foot">
+      <div class="lm-btns">
+        <button class="lm-btn lm-btn-primary" data-close="imprint">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- GDPR Data Request -->
+<div class="lm-overlay" id="modal-gdpr">
+  <div class="lm-box">
+    <div class="lm-head">
+      <div class="lm-eyebrow">Legal</div>
+      <div class="lm-title">GDPR Data Request</div>
+      <button class="lm-close" data-close="gdpr">✕</button>
+    </div>
+    <div class="lm-body">
+      <div class="lm-section">
+        <div class="lm-sh">Your Rights Under GDPR</div>
+        <p class="lm-p">As a data subject under the EU General Data Protection Regulation you have the right to: access the personal data we hold about you; rectify inaccurate data; request erasure ("right to be forgotten"); restrict or object to processing; and receive your data in a portable format.</p>
+        <p class="lm-p">Use the form below to submit a request. We will respond within 30 days.</p>
+      </div>
+      <div class="lm-form-row">
+        <label class="lm-label">Your full name</label>
+        <input class="lm-input" type="text" placeholder="Anna Schmidt">
+      </div>
+      <div class="lm-form-row">
+        <label class="lm-label">Business email address</label>
+        <input class="lm-input" type="email" placeholder="anna@company.com">
+      </div>
+      <div class="lm-form-row">
+        <label class="lm-label">Request type</label>
+        <select class="lm-select">
+          <option value="">Select one</option>
+          <option>Access — send me a copy of my data</option>
+          <option>Rectification — correct my data</option>
+          <option>Erasure — delete my data</option>
+          <option>Restriction — limit processing of my data</option>
+          <option>Portability — export my data</option>
+          <option>Objection — stop processing my data</option>
+        </select>
+      </div>
+      <div class="lm-form-row">
+        <label class="lm-label">Additional details (optional)</label>
+        <textarea class="lm-input" rows="3" placeholder="Describe your request in more detail if needed." style="resize:vertical"></textarea>
+      </div>
+    </div>
+    <div class="lm-foot">
+      <div class="lm-btns">
+        <button class="lm-btn lm-btn-primary" data-close="gdpr">Submit request</button>
+        <button class="lm-btn lm-btn-secondary" data-close="gdpr">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Accessibility Statement -->
+<div class="lm-overlay" id="modal-accessibility">
+  <div class="lm-box">
+    <div class="lm-head">
+      <div class="lm-eyebrow">Legal</div>
+      <div class="lm-title">Accessibility Statement</div>
+      <button class="lm-close" data-close="accessibility">✕</button>
+    </div>
+    <div class="lm-body">
+      <div class="lm-section">
+        <div class="lm-sh">Our Commitment</div>
+        <p class="lm-p">Yi Ye Estate is committed to making this website accessible to the widest possible audience. We aim to conform to the Web Content Accessibility Guidelines (WCAG) 2.1 at Level AA.</p>
+      </div>
+      <div class="lm-section">
+        <div class="lm-sh">Current Status</div>
+        <p class="lm-p">This site was last reviewed for accessibility in November 2026. Known measures include: sufficient colour contrast ratios across all text; keyboard-navigable modal dialogs with focus management; semantic HTML landmarks (nav, main, footer, section); and descriptive alt text on all product and production images.</p>
+      </div>
+      <div class="lm-section">
+        <div class="lm-sh">Known Limitations</div>
+        <p class="lm-p">The tea slideshow and hero video background are decorative and do not convey content not available in text. The enquiry form is fully labelled and keyboard-accessible.</p>
+      </div>
+      <div class="lm-section">
+        <div class="lm-sh">Feedback & Contact</div>
+        <p class="lm-p">If you experience any difficulty accessing content on this site, please contact us at <a href="mailto:trade@yiye-estate.com">trade@yiye-estate.com</a>. We aim to respond to accessibility feedback within 5 business days and will work to resolve issues promptly.</p>
+      </div>
+      <div class="lm-section">
+        <div class="lm-sh">Enforcement</div>
+        <p class="lm-p">If you are located in the EU and are not satisfied with our response, you may contact the relevant national enforcement body in your country of residence.</p>
+      </div>
+    </div>
+    <div class="lm-foot">
+      <div class="lm-btns">
+        <button class="lm-btn lm-btn-primary" data-close="accessibility">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  // Nav
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('on', window.scrollY > 40);
+  }, { passive: true });
+
+  // Form
+  function sendForm() {
+    document.getElementById('fFields').style.display = 'none';
+    document.getElementById('fSent').style.display = 'block';
+  }
+
+  // ── Production slideshow ──
+  (function() {
+    const slides = document.querySelectorAll('.prod-slide');
+    const counter = document.getElementById('slideCounter');
+    const dotsWrap = document.getElementById('slideDots');
+    const total = slides.length;
+    let current = 0;
+    let timer;
+
+    // build dots
+    slides.forEach((_, i) => {
+      const d = document.createElement('div');
+      d.className = 'slide-dot' + (i === 0 ? ' active' : '');
+      dotsWrap.appendChild(d);
+    });
+
+    function goTo(idx) {
+      slides[current].classList.remove('active');
+      dotsWrap.children[current].classList.remove('active');
+      current = (idx + total) % total;
+      slides[current].classList.add('active');
+      dotsWrap.children[current].classList.add('active');
+      const n = String(current + 1).padStart(2, '0');
+      const t = String(total).padStart(2, '0');
+      counter.textContent = n + ' / ' + t;
+    }
+
+    function next() { goTo(current + 1); }
+
+    timer = setInterval(next, 1500);
+
+    // pause on hover
+    const wrap = document.getElementById('prodSlideshow');
+    wrap.addEventListener('mouseenter', () => clearInterval(timer));
+    wrap.addEventListener('mouseleave', () => { timer = setInterval(next, 1500); });
+  })();
+
+  // ── Reviews carousel: 3 per page on desktop, 1 on mobile ──
+  (function() {
+    const cards = Array.from(document.querySelectorAll('.rev-card'));
+    const countEl = document.getElementById('revCount');
+    const total = cards.length;
+    let page = 0;
+
+    function perPage() { return window.innerWidth <= 680 ? 1 : 3; }
+    function pageCount() { return Math.ceil(total / perPage()); }
+
+    function update() {
+      const pp = perPage();
+      const pages = pageCount();
+      if (page >= pages) page = pages - 1;
+      const start = page * pp;
+      cards.forEach((c, i) => {
+        c.style.display = (i >= start && i < start + pp) ? 'flex' : 'none';
+      });
+      const end = Math.min(start + pp, total);
+      countEl.textContent = pp === 1
+        ? (start + 1) + ' / ' + total
+        : (start + 1) + ' — ' + end + ' / ' + total;
+      document.getElementById('revPrev').style.opacity = page === 0 ? '.3' : '1';
+      document.getElementById('revNext').style.opacity = page >= pages - 1 ? '.3' : '1';
+    }
+
+    window.revMove = function(dir) {
+      page = Math.max(0, Math.min(pageCount() - 1, page + dir));
+      update();
+    };
+
+    function equaliseHeights() {
+      // reset first so natural heights are measured
+      cards.forEach(c => { c.style.minHeight = ''; c.style.display = 'flex'; });
+      const maxH = Math.max(...cards.map(c => c.offsetHeight));
+      cards.forEach(c => { c.style.minHeight = maxH + 'px'; });
+      update();
+    }
+
+    window.addEventListener('resize', equaliseHeights);
+    equaliseHeights();
+  })();
+
+  // ── About timeline: auto-cycling active dot every 1.5s ──
+  (function() {
+    const section = document.getElementById('about');
+    if (!section) return;
+    const items = section.querySelectorAll('.tl-item');
+    if (!items.length) return;
+    let idx = 0;
+
+    function activateIndex(i) {
+      items.forEach((item, j) => {
+        const dot = item.querySelector('.tl-dot');
+        if (dot) dot.classList.toggle('active', j === i);
+      });
+    }
+
+    activateIndex(0);
+    setInterval(function() {
+      idx = (idx + 1) % items.length;
+      activateIndex(idx);
+    }, 1500);
+  })();
+</script>
+
+<!-- TEA MODAL -->
+<div class="tea-modal-overlay" id="teaModal" role="dialog" aria-modal="true">
+  <div class="tea-modal">
+    <button class="tea-modal-close" id="teaModalClose" aria-label="Close">✕</button>
+    <div class="tea-modal-img">
+      <img id="tmImg" src="" alt="">
+      <div class="tea-modal-img-label" id="tmGlyph"></div>
+    </div>
+    <div class="tea-modal-body">
+      <span class="tea-modal-type" id="tmType"></span>
+      <div class="tea-modal-zh" id="tmZh"></div>
+      <div class="tea-modal-en" id="tmEn"></div>
+      <p class="tea-modal-desc" id="tmDesc"></p>
+      <div>
+        <div class="tea-modal-section-title">Packaging options</div>
+        <div class="tea-modal-packs" id="tmPacks"></div>
+      </div>
+      <div class="tea-modal-specs" id="tmSpecs"></div>
+      <div class="tea-modal-cta">
+        <a href="#contact" class="tea-modal-btn-primary" id="tmCta">Request sample &amp; price list</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+(function() {
+  const TEAS = {
+    baimudan: {
+      img: 'https://res.cloudinary.com/blz27p9k/image/upload/v1793892190/Bai_Mudan.png',
+      glyph: '白', type: 'White Tea',
+      zh: '白牡丹', en: 'Bai Mudan — White Peony',
+      desc: 'Grown at 1,350 m in the Wuyi foothills, Bai Mudan is harvested with one bud and two leaves. The cup yields honeyed florals with a soft, clean finish and minimal tannin — an approachable single-origin white ideal for specialty retail and hotel F&B. Spring harvest delivers a lighter, more aromatic profile; autumn harvest adds body and a subtle earthiness. Each batch is numbered, weighed fresh, and air-dried without oxidation. Certificate of origin and third-party pesticide residue report included with every order.',
+      packs: ['1 kg vacuum bag', '3 kg export carton', '5 kg export carton', '10 kg bulk sack', '25 kg bulk sack'],
+      specs: [
+        { l: 'MOQ', v: '5 kg' }, { l: 'Harvest', v: 'Spring / Autumn' },
+        { l: 'Lead time', v: '10–14 business days' }, { l: 'Shelf life', v: '24 months sealed' },
+        { l: 'Pricing basis', v: 'FOB Xiamen' }, { l: 'Certifications', v: 'ISO 22000 · SC licence' },
+        { l: 'Lab reports', v: 'On request (EU/US MRL)' }, { l: 'Private label', v: 'Available from 10 kg' }
+      ]
+    },
+    longjing: {
+      img: 'https://res.cloudinary.com/blz27p9k/image/upload/v1793892190/Long_Jing2.png',
+      glyph: '龍', type: 'Green Tea',
+      zh: '龍井', en: 'Long Jing — Dragon Well',
+      desc: 'Pre-Qingming (明前) flush only — the first buds of spring, picked before 5 April. Pan-fired by hand in small batches of 300 g to lock in the characteristic chestnut–vegetal aroma and clean, slightly sweet finish. Flat-pressed leaf shape, jade-green colour, low bitterness. The annual yield from our estate is strictly limited; wholesale allocations are pre-booked by October of the preceding year. Ideal for high-end tea shops, Michelin-starred restaurants, and gift retail.',
+      packs: ['1 kg vacuum bag (pre-Qingming)', '3 kg export carton', '5 kg export carton', '10 kg bulk sack'],
+      specs: [
+        { l: 'MOQ', v: '3 kg' }, { l: 'Harvest', v: 'Spring only (pre-Qingming)' },
+        { l: 'Lead time', v: '14–21 business days' }, { l: 'Shelf life', v: '12 months sealed' },
+        { l: 'Pricing basis', v: 'FOB Xiamen' }, { l: 'Certifications', v: 'ISO 22000 · Organic (pending)' },
+        { l: 'Lab reports', v: 'On request (EU/US MRL)' }, { l: 'Allocation', v: 'Pre-booking by October' }
+      ]
+    },
+    tieguanyin: {
+      img: 'https://res.cloudinary.com/blz27p9k/image/upload/v1793892191/Tieguanyin.png',
+      glyph: '鐵', type: 'Oolong',
+      zh: '鐵觀音', en: 'Tieguanyin — Iron Goddess',
+      desc: 'Medium-oxidised lightly roasted Tieguanyin from Anxi, Fujian. The spring harvest presents intense orchid and osmanthus florals with a lingering huigan (回甘) sweetness; the autumn harvest shifts towards roasted chestnut and a fuller, creamier body. Both are ball-rolled and graded manually. Tieguanyin consistently ranks among the top-selling Chinese oolongs in European specialty channels. The tea opens across 5–7 infusions, making it an excellent value-per-cup proposition for hospitality buyers.',
+      packs: ['1 kg vacuum bag', '3 kg export carton', '5 kg export carton', '10 kg bulk sack', '25 kg bulk sack'],
+      specs: [
+        { l: 'MOQ', v: '5 kg' }, { l: 'Harvest', v: 'Spring / Autumn' },
+        { l: 'Lead time', v: '10–14 business days' }, { l: 'Shelf life', v: '18 months sealed' },
+        { l: 'Pricing basis', v: 'FOB Xiamen' }, { l: 'Certifications', v: 'ISO 22000 · SC licence' },
+        { l: 'Lab reports', v: 'On request (EU/US MRL)' }, { l: 'Private label', v: 'Available from 10 kg' }
+      ]
+    },
+    rougui: {
+      img: 'https://res.cloudinary.com/blz27p9k/image/upload/v1793892190/Rou_Gui.png',
+      glyph: '岩', type: 'Rock Oolong',
+      zh: '肉桂岩茶', en: 'Rou Gui — Rock Cinnamon',
+      desc: 'Grown in the UNESCO-listed Wuyi Mountain rock terrain (正岩), our Rou Gui carries the distinctive "rock rhyme" (岩韻) — a persistent mineral finish that cannot be replicated on lowland estates. High oxidation and medium-heavy charcoal roasting produce a complex cup: spiced cinnamon on entry, followed by dark stone fruit and a cooling throat sensation. Spring harvest only; total annual yield under 200 kg. Wholesale allocations are confirmed by signed pre-order. This is a collector-grade product suitable for auction lots, private label prestige lines, and connoisseur retail.',
+      packs: ['1 kg vacuum bag (nitrogen flushed)', '3 kg export carton', '5 kg export carton'],
+      specs: [
+        { l: 'MOQ', v: '3 kg' }, { l: 'Harvest', v: 'Spring only' },
+        { l: 'Lead time', v: '21–30 business days' }, { l: 'Shelf life', v: '36 months sealed' },
+        { l: 'Pricing basis', v: 'FOB Xiamen' }, { l: 'Certifications', v: 'ISO 22000 · UNESCO terroir' },
+        { l: 'Lab reports', v: 'On request (EU/US MRL)' }, { l: 'Allocation', v: 'Signed pre-order required' }
+      ]
+    },
+    dianhong: {
+      img: 'https://res.cloudinary.com/blz27p9k/image/upload/v1793892190/Dian_Hong.png',
+      glyph: '紅', type: 'Black Tea',
+      zh: '滇紅金芽', en: 'Dian Hong — Yunnan Gold',
+      desc: 'Full golden-tip Dian Hong from Yunnan\'s Fengqing county, elevation 1,600 m. The golden buds are hand-rolled and fully oxidised to develop a naturally sweet malt and cocoa character with no astringency. The liquor is a deep amber with a velvety body, cooling to a copper tone. Dian Hong is one of the most commercially versatile Chinese teas — it blends beautifully with milk, suits a wide retail demographic, and holds up well in pyramid tea bags for hospitality. Consistent supply across spring and summer flushes.',
+      packs: ['1 kg vacuum bag', '3 kg export carton', '5 kg export carton', '10 kg bulk sack', '25 kg bulk sack', 'Pyramid teabag format (2 g × 500 units/carton)'],
+      specs: [
+        { l: 'MOQ', v: '5 kg' }, { l: 'Harvest', v: 'Spring / Summer' },
+        { l: 'Lead time', v: '10–14 business days' }, { l: 'Shelf life', v: '24 months sealed' },
+        { l: 'Pricing basis', v: 'FOB Xiamen' }, { l: 'Certifications', v: 'ISO 22000 · SC licence' },
+        { l: 'Lab reports', v: 'On request (EU/US MRL)' }, { l: 'Private label', v: 'Available from 5 kg' }
+      ]
+    },
+    shupuerh: {
+      img: 'https://res.cloudinary.com/blz27p9k/image/upload/v1793892190/Shu_Pu-erh.png',
+      glyph: '普', type: 'Pu-erh',
+      zh: '熟普洱', en: 'Shu Pu-erh — Ripe Pu-erh',
+      desc: 'Wet-piled (渥堆) Shu Pu-erh from Yunnan\'s Xishuangbanna, pressed into 357 g traditional beeng cha cakes or supplied as loose-leaf. The fermentation process produces a smooth, earthy cup with notes of dark earth, dried fruit, and a warming finish — zero astringency and very low caffeine relative to leaf weight. Pu-erh improves with age; each cake is dated and batch-stamped for provenance. Valued by specialty importers for its long shelf life, distinctive category positioning, and strong margin potential in wellness and gift retail.',
+      packs: ['1 kg loose-leaf vacuum bag', '3 kg export carton (loose)', '5 kg export carton (loose)', '357 g beeng cha cake × 7 (= 2.5 kg)', '10 kg bulk sack (loose)'],
+      specs: [
+        { l: 'MOQ', v: '5 kg' }, { l: 'Harvest', v: 'Autumn' },
+        { l: 'Lead time', v: '14–21 business days' }, { l: 'Shelf life', v: '10+ years (improves with age)' },
+        { l: 'Pricing basis', v: 'FOB Xiamen' }, { l: 'Certifications', v: 'ISO 22000 · SC licence' },
+        { l: 'Lab reports', v: 'On request (EU/US MRL)' }, { l: 'Private label', v: 'Available from 10 kg' }
+      ]
+    }
+  };
+
+  const overlay = document.getElementById('teaModal');
+  const closeBtn = document.getElementById('teaModalClose');
+
+  function openModal(key) {
+    const t = TEAS[key];
+    if (!t) return;
+    document.getElementById('tmImg').src = t.img;
+    document.getElementById('tmImg').alt = t.en;
+    document.getElementById('tmGlyph').textContent = t.glyph;
+    document.getElementById('tmType').textContent = t.type;
+    document.getElementById('tmZh').textContent = t.zh;
+    document.getElementById('tmEn').textContent = t.en;
+    document.getElementById('tmDesc').textContent = t.desc;
+    // packs
+    const packsEl = document.getElementById('tmPacks');
+    packsEl.innerHTML = t.packs.map(p => `<span class="tea-modal-pack">${p}</span>`).join('');
+    // specs
+    const specsEl = document.getElementById('tmSpecs');
+    specsEl.innerHTML = t.specs.map(s =>
+      `<div class="tea-modal-spec-item"><div class="tea-modal-spec-label">${s.l}</div><div class="tea-modal-spec-val">${s.v}</div></div>`
+    ).join('');
+    overlay.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeModal() {
+    overlay.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  document.querySelectorAll('[data-tea]').forEach(btn => {
+    btn.addEventListener('click', () => openModal(btn.dataset.tea));
+  });
+  closeBtn.addEventListener('click', closeModal);
+  overlay.addEventListener('click', e => { if (e.target === overlay) closeModal(); });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+
+  // close modal CTA scrolls to contact
+  document.getElementById('tmCta').addEventListener('click', closeModal);
+})();
+
+  // ── Legal modals ──
+  (function() {
+    function openLegal(id) {
+      const el = document.getElementById('modal-' + id);
+      if (!el) return;
+      el.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeLegal(id) {
+      const el = document.getElementById('modal-' + id);
+      if (!el) return;
+      el.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+
+    // open on footer link click
+    document.querySelectorAll('[data-modal]').forEach(a => {
+      a.addEventListener('click', e => {
+        e.preventDefault();
+        openLegal(a.dataset.modal);
+      });
+    });
+
+    // close on button click
+    document.querySelectorAll('[data-close]').forEach(btn => {
+      btn.addEventListener('click', () => closeLegal(btn.dataset.close));
+    });
+
+    // close on overlay click
+    document.querySelectorAll('.lm-overlay').forEach(overlay => {
+      overlay.addEventListener('click', e => {
+        if (e.target === overlay) {
+          const id = overlay.id.replace('modal-', '');
+          closeLegal(id);
+        }
+      });
+    });
+
+    // close on Escape
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape') {
+        document.querySelectorAll('.lm-overlay.open').forEach(el => {
+          closeLegal(el.id.replace('modal-', ''));
+        });
+      }
+    });
+
+    // Cookie helpers
+    window.saveCookies = function() {};
+    window.acceptAll = function() {
+      ['ck-analytics','ck-prefs','ck-marketing'].forEach(id => {
+        const el = document.getElementById(id);
+        if (el) el.checked = true;
+      });
+    };
+    window.rejectOptional = function() {
+      ['ck-analytics','ck-prefs','ck-marketing'].forEach(id => {
+        const el = document.getElementById(id);
+        if (el) el.checked = false;
+      });
+    };
+  })();
+</script>
+</body>
+</html>
+
+</body></html>
