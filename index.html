@@ -117,7 +117,11 @@ nav.on {
 }
 .hero-bg video {
   width: 100%; height: 100%; object-fit: cover;
+  object-position: center center;
   opacity: 1; filter: saturate(1.05) brightness(.95);
+}
+@media (max-width: 860px) {
+  .hero-bg video { object-position: right center; }
 }
 .hero-bg::after {
   content: '';
